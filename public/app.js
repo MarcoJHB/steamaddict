@@ -27,36 +27,13 @@ async function loadData() {
       renderTable();
       showState("table");
     } else {
-      showState("empty");
+      toast("No games available", "err");
+      showState("loading");
     }
   } catch (e) {
     console.error("Failed to load:", e);
-    showState("empty");
-  }
-}
-
-// ── Fetch trigger ──────────────────────────────────────
-async function triggerFetch() {
-  const btn  = document.getElementById("refreshBtn");
-  const icon = document.getElementById("refreshIcon");
-  btn.disabled = true;
-  btn.classList.add("loading");
-  toast("Fetching from Steam... this takes ~2 minutes", "");
-
-  try {
-    const res  = await fetch("/api/fetch-games", { method: "POST" });
-    const json = await res.json();
-    if (json.success) {
-      toast(`Updated ${json.count} games`, "ok");
-      await loadData();
-    } else {
-      toast("Fetch failed: " + (json.error || "unknown error"), "err");
-    }
-  } catch (e) {
     toast("Network error: " + e.message, "err");
-  } finally {
-    btn.disabled = false;
-    btn.classList.remove("loading");
+    showState("loading");
   }
 }
 
@@ -188,7 +165,6 @@ function updateLastUpdated(iso) {
 // ── UI helpers ─────────────────────────────────────────
 function showState(state) {
   document.getElementById("loadingState").style.display = state === "loading" ? "flex" : "none";
-  document.getElementById("emptyState").style.display   = state === "empty"   ? "flex" : "none";
   document.getElementById("tableWrap").style.display    = state === "table"   ? "block" : "none";
 }
 
