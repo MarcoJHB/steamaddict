@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
 async function loadData() {
   showState("loading");
   try {
-    const res  = await fetch("/api/games");
+    const res  = await fetch("/games.json");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     
     const json = await res.json();
@@ -35,7 +35,7 @@ async function loadData() {
   } catch (e) {
     console.error("Failed to load:", e);
     if (e.message !== "Network error") {
-      toast("Network error: " + e.message, "err");
+      toast("Error loading games: " + e.message, "err");
     }
     showState("loading");
   }
