@@ -76,6 +76,9 @@
         <button class="filter-btn" data-genre="strategy" onclick="setGenre('strategy', this)">
           Strategy <span class="badge" id="b-strategy">0</span>
         </button>
+        <button class="filter-btn" data-genre="management" onclick="setGenre('management', this)">
+          Management <span class="badge" id="b-management">0</span>
+        </button>
       </div>
 
       <div class="sidebar-section">
@@ -92,11 +95,12 @@
         <input class="sidebar-input" type="text" id="newGameName" placeholder="Game name" />
         <input class="sidebar-input" type="text" id="newAppId" placeholder="Steam App ID" />
         <select class="sidebar-input" id="newGenre">
+          <option value="strategy">Strategy</option>
+          <option value="management">Management</option>
           <option value="survival">Survival</option>
           <option value="automation">Automation</option>
           <option value="colony">Colony sim</option>
           <option value="rpg">RPG</option>
-          <option value="strategy">Strategy</option>
         </select>
         <button class="add-btn" onclick="addGame()">+ Add game</button>
       </div>

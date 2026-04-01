@@ -188,7 +188,7 @@ function updateStats() {
 }
 
 function updateBadges() {
-  const genres = ["all", "survival", "automation", "colony", "rpg", "strategy"];
+  const genres = ["all", "strategy", "management", "survival", "automation", "colony", "rpg"];
   genres.forEach(g => {
     const count = g === "all" ? allGames.length : allGames.filter(d => d.genre === g).length;
     const el = document.getElementById("b-" + g);
