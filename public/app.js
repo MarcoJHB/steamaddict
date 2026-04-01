@@ -17,6 +17,8 @@ async function loadData() {
   showState("loading");
   try {
     const res  = await fetch("/api/games");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    
     const json = await res.json();
 
     if (json.games && json.games.length > 0) {
@@ -32,7 +34,9 @@ async function loadData() {
     }
   } catch (e) {
     console.error("Failed to load:", e);
-    toast("Network error: " + e.message, "err");
+    if (e.message !== "Network error") {
+      toast("Network error: " + e.message, "err");
+    }
     showState("loading");
   }
 }
