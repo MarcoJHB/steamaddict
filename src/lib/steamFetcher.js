@@ -80,12 +80,12 @@ async function fetchGameStats(appId) {
     
     if (data && data.appid) {
       return {
-        avg: Math.round((data.playtime_median || 0) * 1.3), // estimate avg from median
-        median: data.playtime_median || 0,
-        atReview: data.playtime_average || 0,
-        lastTwoWeeks: Math.round((data.playtime_average || 0) * 0.15), // rough estimate
-        highest: Math.round((data.playtime_median || 0) * 10),
-        sampleSize: data.owners ? Math.floor(data.owners * 0.001) : 200, // estimate sample size
+        avg: Math.round(data.average_forever || 0),
+        median: Math.round(data.median_forever || 0),
+        atReview: Math.round(data.average_2weeks || 0),
+        lastTwoWeeks: Math.round(data.median_2weeks || 0),
+        highest: Math.round(data.ccu || 0),
+        sampleSize: data.owners ? data.owners : null,
       };
     }
   } catch (e) {

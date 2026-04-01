@@ -114,7 +114,7 @@ function renderTable() {
         <td>
           <div class="game-cell">
             ${imgHtml}
-            <span class="game-name">${g.name}</span>
+            <a class="game-name" href="https://steamcommunity.com/app/${g.appId}" target="_blank" rel="noopener">${g.name}</a>
           </div>
         </td>
         <td><span class="genre-tag genre-${g.genre || "survival"}">${g.genre || "—"}</span></td>
