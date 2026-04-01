@@ -14,7 +14,7 @@
       "lastTwoWeeks": 33,
       "highest": 3898,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:32.101Z"
+      "fetchedAt": "2026-04-01T12:33:33.945Z"
     },
     {
       "name": "Factorio",
@@ -22,7 +22,7 @@
       "genre": "automation",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg?t=1763986204",
       "releaseDate": null,
-      "price": "32,--€",
+      "price": "$35.00",
       "totalReviews": null,
       "avg": 344,
       "median": 130,
@@ -30,7 +30,7 @@
       "lastTwoWeeks": 23,
       "highest": 5353,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:34.107Z"
+      "fetchedAt": "2026-04-01T12:33:35.650Z"
     },
     {
       "name": "Subnautica",
@@ -38,7 +38,7 @@
       "genre": "survival",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1774323987",
       "releaseDate": null,
-      "price": "29,99€",
+      "price": "$29.99",
       "totalReviews": null,
       "avg": 50,
       "median": 30,
@@ -46,7 +46,7 @@
       "lastTwoWeeks": 15,
       "highest": 615,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:36.078Z"
+      "fetchedAt": "2026-04-01T12:33:37.474Z"
     },
     {
       "name": "Grounded",
@@ -54,7 +54,7 @@
       "genre": "survival",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/962130/header.jpg?t=1768264530",
       "releaseDate": null,
-      "price": "39,99€",
+      "price": "$39.99",
       "totalReviews": null,
       "avg": 76,
       "median": 54,
@@ -62,7 +62,7 @@
       "lastTwoWeeks": 17,
       "highest": 583,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:37.892Z"
+      "fetchedAt": "2026-04-01T12:33:39.296Z"
     },
     {
       "name": "Abiotic Factor",
@@ -74,7 +74,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": 0,
-      "fetchedAt": "2026-04-01T12:12:38.601Z"
+      "fetchedAt": "2026-04-01T12:33:40.001Z"
     },
     {
       "name": "ASKA",
@@ -90,7 +90,7 @@
       "lastTwoWeeks": 24,
       "highest": 1204,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:40.363Z"
+      "fetchedAt": "2026-04-01T12:33:41.928Z"
     },
     {
       "name": "Enshrouded",
@@ -106,7 +106,7 @@
       "lastTwoWeeks": 13,
       "highest": 6404,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:42.225Z"
+      "fetchedAt": "2026-04-01T12:33:43.671Z"
     },
     {
       "name": "Satisfactory",
@@ -122,7 +122,7 @@
       "lastTwoWeeks": 28,
       "highest": 3290,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:44.354Z"
+      "fetchedAt": "2026-04-01T12:33:45.386Z"
     },
     {
       "name": "Dwarf Fortress",
@@ -138,7 +138,7 @@
       "lastTwoWeeks": 10,
       "highest": 4849,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:46.318Z"
+      "fetchedAt": "2026-04-01T12:33:47.089Z"
     },
     {
       "name": "Oxygen Not Included",
@@ -154,7 +154,7 @@
       "lastTwoWeeks": 24,
       "highest": 5153,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:48.173Z"
+      "fetchedAt": "2026-04-01T12:33:48.858Z"
     },
     {
       "name": "Dyson Sphere Program",
@@ -170,7 +170,7 @@
       "lastTwoWeeks": 24,
       "highest": 1550,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:49.999Z"
+      "fetchedAt": "2026-04-01T12:33:50.679Z"
     },
     {
       "name": "Valheim",
@@ -186,7 +186,7 @@
       "lastTwoWeeks": 23,
       "highest": 1333,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:51.866Z"
+      "fetchedAt": "2026-04-01T12:33:52.484Z"
     },
     {
       "name": "Civilization VI",
@@ -196,13 +196,13 @@
       "releaseDate": null,
       "price": "59,99€",
       "totalReviews": null,
-      "avg": 209,
+      "avg": 216,
       "median": 42,
-      "atReview": 204,
+      "atReview": 211,
       "lastTwoWeeks": 18,
       "highest": 8208,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:53.609Z"
+      "fetchedAt": "2026-04-01T12:33:54.215Z"
     },
     {
       "name": "Vampire Survivors",
@@ -218,8 +218,8 @@
       "lastTwoWeeks": 13,
       "highest": 469,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:12:55.411Z"
+      "fetchedAt": "2026-04-01T12:33:56.009Z"
     }
   ],
-  "lastUpdated": "2026-04-01T12:12:55.922Z"
+  "lastUpdated": "2026-04-01T12:33:56.522Z"
 }
