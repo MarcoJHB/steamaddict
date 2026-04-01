@@ -19,10 +19,10 @@ exports.handler = async (event) => {
   }
 
   try {
-    console.log("Fetching top strategy and management games from Steam...");
+    console.log("Fetching top strategy, management, colony sim, and city building games from Steam...");
     
     // Step 1: Get top 100 games
-    const games = await fetchTopGames(["strategy", "management"], 100);
+    const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
     
     // Step 2: Fetch playtime stats for each game
     const enrichedGames = await fetchAllGames(games, {

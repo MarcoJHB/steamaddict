@@ -9,7 +9,7 @@ const db                = require("../../src/lib/db");
 const handler = async () => {
   try {
     console.log("[Scheduled] Starting daily Steam fetch...");
-    const games = await fetchTopGames(["strategy", "management"], 100);
+    const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
     const enrichedGames = await fetchAllGames(games);
     await db.save(enrichedGames);
     console.log(`[Scheduled] Done. Fetched ${enrichedGames.length} games.`);

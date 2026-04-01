@@ -8,13 +8,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 536,
-      "median": 143,
-      "atReview": 535,
-      "lastTwoWeeks": 28,
-      "highest": 14948,
+      "avg": 413,
+      "median": 160,
+      "atReview": 412,
+      "lastTwoWeeks": 26,
+      "highest": 5972,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:39.517Z"
+      "fetchedAt": "2026-04-01T13:13:04.605Z"
     },
     {
       "appId": "578080",
@@ -30,7 +30,7 @@
       "lastTwoWeeks": 23,
       "highest": 9541,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:41.494Z"
+      "fetchedAt": "2026-04-01T13:13:06.325Z"
     },
     {
       "appId": "359550",
@@ -40,13 +40,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 414,
-      "median": 154,
-      "atReview": 412,
+      "avg": 438,
+      "median": 172,
+      "atReview": 436,
       "lastTwoWeeks": 21,
-      "highest": 3651,
+      "highest": 3467,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:43.190Z"
+      "fetchedAt": "2026-04-01T13:13:08.067Z"
     },
     {
       "appId": "227300",
@@ -62,7 +62,7 @@
       "lastTwoWeeks": 11,
       "highest": 1024,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:45.055Z"
+      "fetchedAt": "2026-04-01T13:13:09.827Z"
     },
     {
       "appId": "381210",
@@ -72,13 +72,13 @@
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 251,
-      "median": 60,
-      "atReview": 250,
-      "lastTwoWeeks": 23,
-      "highest": 4221,
+      "avg": 225,
+      "median": 63,
+      "atReview": 224,
+      "lastTwoWeeks": 24,
+      "highest": 1940,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:47.014Z"
+      "fetchedAt": "2026-04-01T13:13:11.578Z"
     },
     {
       "appId": "1086940",
@@ -88,13 +88,13 @@
       "releaseDate": null,
       "price": "59,99€",
       "totalReviews": null,
-      "avg": 215,
-      "median": 119,
-      "atReview": 214,
-      "lastTwoWeeks": 26,
-      "highest": 1795,
+      "avg": 220,
+      "median": 122,
+      "atReview": 218,
+      "lastTwoWeeks": 27,
+      "highest": 1799,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:48.815Z"
+      "fetchedAt": "2026-04-01T13:13:13.368Z"
     },
     {
       "appId": "236390",
@@ -110,7 +110,7 @@
       "lastTwoWeeks": 8,
       "highest": 7904,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:50.695Z"
+      "fetchedAt": "2026-04-01T13:13:15.044Z"
     },
     {
       "appId": "218620",
@@ -126,7 +126,7 @@
       "lastTwoWeeks": 14,
       "highest": 1806,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:52.514Z"
+      "fetchedAt": "2026-04-01T13:13:16.752Z"
     },
     {
       "appId": "242760",
@@ -136,13 +136,13 @@
       "releaseDate": null,
       "price": "16,79€",
       "totalReviews": null,
-      "avg": 25,
+      "avg": 24,
       "median": 17,
-      "atReview": 24,
+      "atReview": 23,
       "lastTwoWeeks": 11,
       "highest": 180,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:54.524Z"
+      "fetchedAt": "2026-04-01T13:13:18.600Z"
     },
     {
       "appId": "322330",
@@ -158,7 +158,7 @@
       "lastTwoWeeks": 17,
       "highest": 16233,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:56.383Z"
+      "fetchedAt": "2026-04-01T13:13:20.374Z"
     },
     {
       "appId": "620",
@@ -166,15 +166,15 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1745363004",
       "releaseDate": null,
-      "price": "9,75€",
+      "price": "$9.99",
       "totalReviews": null,
-      "avg": 17,
+      "avg": 16,
       "median": 11,
       "atReview": 16,
       "lastTwoWeeks": 7,
       "highest": 135,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:48:58.250Z"
+      "fetchedAt": "2026-04-01T13:13:22.634Z"
     },
     {
       "appId": "322170",
@@ -182,7 +182,7 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1703006148",
       "releaseDate": null,
-      "price": "4,99€",
+      "price": "$4.99",
       "totalReviews": null,
       "avg": 179,
       "median": 43,
@@ -190,7 +190,7 @@
       "lastTwoWeeks": 21,
       "highest": 4511,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:00.190Z"
+      "fetchedAt": "2026-04-01T13:13:24.625Z"
     },
     {
       "appId": "251570",
@@ -198,7 +198,7 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1774294721",
       "releaseDate": null,
-      "price": "43,99€",
+      "price": "$44.99",
       "totalReviews": null,
       "avg": 312,
       "median": 109,
@@ -206,7 +206,7 @@
       "lastTwoWeeks": 18,
       "highest": 4226,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:02.076Z"
+      "fetchedAt": "2026-04-01T13:13:26.441Z"
     },
     {
       "appId": "960090",
@@ -214,7 +214,7 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg?t=1769161752",
       "releaseDate": null,
-      "price": "13,79€",
+      "price": "$13.99",
       "totalReviews": null,
       "avg": 90,
       "median": 34,
@@ -222,7 +222,7 @@
       "lastTwoWeeks": 11,
       "highest": 1164,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:04.020Z"
+      "fetchedAt": "2026-04-01T13:13:28.261Z"
     },
     {
       "appId": "289070",
@@ -238,7 +238,7 @@
       "lastTwoWeeks": 18,
       "highest": 8208,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:05.762Z"
+      "fetchedAt": "2026-04-01T13:13:30.015Z"
     },
     {
       "appId": "444090",
@@ -254,7 +254,7 @@
       "lastTwoWeeks": 1,
       "highest": 4139,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:07.551Z"
+      "fetchedAt": "2026-04-01T13:13:31.771Z"
     },
     {
       "appId": "648800",
@@ -262,15 +262,15 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg?t=1727184011",
       "releaseDate": null,
-      "price": "20,49€",
+      "price": "$19.99",
       "totalReviews": null,
-      "avg": 32,
-      "median": 20,
-      "atReview": 28,
-      "lastTwoWeeks": 12,
-      "highest": 338,
+      "avg": 34,
+      "median": 18,
+      "atReview": 33,
+      "lastTwoWeeks": 10,
+      "highest": 1034,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:09.532Z"
+      "fetchedAt": "2026-04-01T13:13:33.489Z"
     },
     {
       "appId": "394360",
@@ -280,13 +280,13 @@
       "releaseDate": null,
       "price": "49,99€",
       "totalReviews": null,
-      "avg": 388,
+      "avg": 376,
       "median": 100,
-      "atReview": 385,
-      "lastTwoWeeks": 22,
-      "highest": 10502,
+      "atReview": 374,
+      "lastTwoWeeks": 20,
+      "highest": 10507,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:11.331Z"
+      "fetchedAt": "2026-04-01T13:13:35.246Z"
     },
     {
       "appId": "107410",
@@ -296,13 +296,13 @@
       "releaseDate": null,
       "price": "29,99€",
       "totalReviews": null,
-      "avg": 421,
-      "median": 35,
-      "atReview": 415,
-      "lastTwoWeeks": 16,
+      "avg": 428,
+      "median": 38,
+      "atReview": 423,
+      "lastTwoWeeks": 17,
       "highest": 23383,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:13.154Z"
+      "fetchedAt": "2026-04-01T13:13:37.079Z"
     },
     {
       "appId": "255710",
@@ -312,13 +312,13 @@
       "releaseDate": null,
       "price": "27,99€",
       "totalReviews": null,
-      "avg": 103,
-      "median": 33,
-      "atReview": 99,
+      "avg": 106,
+      "median": 32,
+      "atReview": 102,
       "lastTwoWeeks": 16,
       "highest": 2908,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:15.005Z"
+      "fetchedAt": "2026-04-01T13:13:38.881Z"
     },
     {
       "appId": "261550",
@@ -328,13 +328,13 @@
       "releaseDate": null,
       "price": "49,99€",
       "totalReviews": null,
-      "avg": 200,
+      "avg": 199,
       "median": 58,
-      "atReview": 194,
-      "lastTwoWeeks": 29,
+      "atReview": 193,
+      "lastTwoWeeks": 30,
       "highest": 2716,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:16.965Z"
+      "fetchedAt": "2026-04-01T13:13:40.669Z"
     },
     {
       "appId": "10",
@@ -344,13 +344,13 @@
       "releaseDate": null,
       "price": "8,19€",
       "totalReviews": null,
-      "avg": 94,
+      "avg": 118,
       "median": 12,
-      "atReview": 91,
-      "lastTwoWeeks": 10,
+      "atReview": 116,
+      "lastTwoWeeks": 11,
       "highest": 2477,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:19.757Z"
+      "fetchedAt": "2026-04-01T13:13:42.395Z"
     },
     {
       "appId": "526870",
@@ -360,13 +360,13 @@
       "releaseDate": null,
       "price": "$39.99",
       "totalReviews": null,
-      "avg": 162,
-      "median": 70,
-      "atReview": 159,
-      "lastTwoWeeks": 28,
+      "avg": 166,
+      "median": 71,
+      "atReview": 163,
+      "lastTwoWeeks": 29,
       "highest": 3290,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:21.556Z"
+      "fetchedAt": "2026-04-01T13:13:44.276Z"
     },
     {
       "appId": "1468810",
@@ -376,13 +376,13 @@
       "releaseDate": null,
       "price": "16,79€",
       "totalReviews": null,
-      "avg": 119,
-      "median": 52,
-      "atReview": 105,
-      "lastTwoWeeks": 27,
-      "highest": 1627,
-      "sampleSize": 99,
-      "fetchedAt": "2026-04-01T12:49:22.502Z"
+      "avg": 195,
+      "median": 73,
+      "atReview": 176,
+      "lastTwoWeeks": 21,
+      "highest": 3301,
+      "sampleSize": 200,
+      "fetchedAt": "2026-04-01T13:13:46.032Z"
     },
     {
       "appId": "427520",
@@ -395,10 +395,10 @@
       "avg": 344,
       "median": 130,
       "atReview": 338,
-      "lastTwoWeeks": 23,
+      "lastTwoWeeks": 22,
       "highest": 5353,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:24.297Z"
+      "fetchedAt": "2026-04-01T13:13:47.918Z"
     },
     {
       "appId": "700330",
@@ -414,7 +414,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": 0,
-      "fetchedAt": "2026-04-01T12:49:25.059Z"
+      "fetchedAt": "2026-04-01T13:13:48.673Z"
     },
     {
       "appId": "393380",
@@ -430,7 +430,7 @@
       "lastTwoWeeks": 20,
       "highest": 5268,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:26.882Z"
+      "fetchedAt": "2026-04-01T13:13:50.351Z"
     },
     {
       "appId": "294100",
@@ -440,13 +440,13 @@
       "releaseDate": null,
       "price": "31,99€",
       "totalReviews": null,
-      "avg": 416,
-      "median": 140,
-      "atReview": 410,
+      "avg": 413,
+      "median": 135,
+      "atReview": 407,
       "lastTwoWeeks": 33,
       "highest": 3898,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:28.589Z"
+      "fetchedAt": "2026-04-01T13:13:52.268Z"
     },
     {
       "appId": "8930",
@@ -456,13 +456,13 @@
       "releaseDate": null,
       "price": "29,99€",
       "totalReviews": null,
-      "avg": 388,
+      "avg": 282,
       "median": 29,
-      "atReview": 377,
-      "lastTwoWeeks": 20,
+      "atReview": 275,
+      "lastTwoWeeks": 19,
       "highest": 13861,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:30.439Z"
+      "fetchedAt": "2026-04-01T13:13:53.979Z"
     },
     {
       "appId": "3164500",
@@ -472,13 +472,13 @@
       "releaseDate": null,
       "price": "19,50€",
       "totalReviews": null,
-      "avg": 45,
-      "median": 34,
-      "atReview": 43,
-      "lastTwoWeeks": 15,
-      "highest": 227,
-      "sampleSize": 99,
-      "fetchedAt": "2026-04-01T12:49:31.430Z"
+      "avg": 49,
+      "median": 33,
+      "atReview": 47,
+      "lastTwoWeeks": 13,
+      "highest": 1257,
+      "sampleSize": 200,
+      "fetchedAt": "2026-04-01T13:13:55.696Z"
     },
     {
       "appId": "435150",
@@ -488,13 +488,13 @@
       "releaseDate": null,
       "price": "44,99€",
       "totalReviews": null,
-      "avg": 100,
-      "median": 77,
-      "atReview": 94,
-      "lastTwoWeeks": 25,
+      "avg": 104,
+      "median": 78,
+      "atReview": 100,
+      "lastTwoWeeks": 24,
       "highest": 502,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:33.271Z"
+      "fetchedAt": "2026-04-01T13:13:57.442Z"
     },
     {
       "appId": "281990",
@@ -504,13 +504,13 @@
       "releaseDate": null,
       "price": "39,99€",
       "totalReviews": null,
-      "avg": 538,
+      "avg": 540,
       "median": 305,
       "atReview": 535,
-      "lastTwoWeeks": 23,
+      "lastTwoWeeks": 24,
       "highest": 4280,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:35.203Z"
+      "fetchedAt": "2026-04-01T13:13:59.241Z"
     },
     {
       "appId": "646570",
@@ -526,7 +526,7 @@
       "lastTwoWeeks": 18,
       "highest": 559,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:37.152Z"
+      "fetchedAt": "2026-04-01T13:14:01.018Z"
     },
     {
       "appId": "240",
@@ -536,13 +536,13 @@
       "releaseDate": null,
       "price": "9,75€",
       "totalReviews": null,
-      "avg": 63,
+      "avg": 92,
       "median": 10,
-      "atReview": 61,
-      "lastTwoWeeks": 7,
+      "atReview": 90,
+      "lastTwoWeeks": 8,
       "highest": 3382,
-      "sampleSize": 99,
-      "fetchedAt": "2026-04-01T12:49:38.092Z"
+      "sampleSize": 200,
+      "fetchedAt": "2026-04-01T13:14:02.726Z"
     },
     {
       "appId": "400",
@@ -552,13 +552,13 @@
       "releaseDate": null,
       "price": "9,75€",
       "totalReviews": null,
-      "avg": 8,
+      "avg": 12,
       "median": 5,
-      "atReview": 7,
-      "lastTwoWeeks": 4,
-      "highest": 87,
+      "atReview": 11,
+      "lastTwoWeeks": 5,
+      "highest": 598,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:39.967Z"
+      "fetchedAt": "2026-04-01T13:14:04.456Z"
     },
     {
       "appId": "518790",
@@ -568,13 +568,13 @@
       "releaseDate": null,
       "price": "19,50€",
       "totalReviews": null,
-      "avg": 100,
-      "median": 23,
-      "atReview": 94,
-      "lastTwoWeeks": 18,
+      "avg": 102,
+      "median": 22,
+      "atReview": 97,
+      "lastTwoWeeks": 19,
       "highest": 8297,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:41.900Z"
+      "fetchedAt": "2026-04-01T13:14:06.245Z"
     },
     {
       "appId": "270880",
@@ -590,7 +590,7 @@
       "lastTwoWeeks": 17,
       "highest": 12507,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:43.908Z"
+      "fetchedAt": "2026-04-01T13:14:07.997Z"
     },
     {
       "appId": "48700",
@@ -606,23 +606,23 @@
       "lastTwoWeeks": 18,
       "highest": 4262,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:46.338Z"
+      "fetchedAt": "2026-04-01T13:14:09.721Z"
     },
     {
       "appId": "813780",
       "name": "Age of Empires II: Definitive Edition",
-      "genre": "strategy",
+      "genre": "city",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg?t=1771627286",
       "releaseDate": null,
       "price": "32,99€",
       "totalReviews": null,
-      "avg": 270,
-      "median": 62,
-      "atReview": 264,
+      "avg": 284,
+      "median": 63,
+      "atReview": 277,
       "lastTwoWeeks": 18,
       "highest": 4435,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:48.191Z"
+      "fetchedAt": "2026-04-01T13:14:11.541Z"
     },
     {
       "appId": "2379780",
@@ -638,7 +638,7 @@
       "lastTwoWeeks": 12,
       "highest": 436,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:50.218Z"
+      "fetchedAt": "2026-04-01T13:14:13.408Z"
     },
     {
       "appId": "1811260",
@@ -648,13 +648,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 293,
-      "median": 175,
-      "atReview": 287,
+      "avg": 294,
+      "median": 173,
+      "atReview": 288,
       "lastTwoWeeks": 2,
       "highest": 1688,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:52.056Z"
+      "fetchedAt": "2026-04-01T13:14:15.151Z"
     },
     {
       "appId": "304390",
@@ -664,13 +664,13 @@
       "releaseDate": null,
       "price": "29,99€",
       "totalReviews": null,
-      "avg": 123,
+      "avg": 135,
       "median": 28,
-      "atReview": 116,
-      "lastTwoWeeks": 17,
+      "atReview": 131,
+      "lastTwoWeeks": 14,
       "highest": 2526,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:53.987Z"
+      "fetchedAt": "2026-04-01T13:14:16.910Z"
     },
     {
       "appId": "262060",
@@ -680,13 +680,13 @@
       "releaseDate": null,
       "price": "22,99€",
       "totalReviews": null,
-      "avg": 116,
+      "avg": 114,
       "median": 50,
-      "atReview": 109,
+      "atReview": 108,
       "lastTwoWeeks": 18,
       "highest": 1724,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:56.875Z"
+      "fetchedAt": "2026-04-01T13:14:18.651Z"
     },
     {
       "appId": "444200",
@@ -696,13 +696,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 517,
+      "avg": 518,
       "median": 161,
       "atReview": 250,
       "lastTwoWeeks": 3,
       "highest": 6694,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:49:58.531Z"
+      "fetchedAt": "2026-04-01T13:14:20.402Z"
     },
     {
       "appId": "552990",
@@ -712,13 +712,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 586,
+      "avg": 587,
       "median": 215,
       "atReview": 303,
       "lastTwoWeeks": 6,
-      "highest": 8252,
+      "highest": 8264,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:00.214Z"
+      "fetchedAt": "2026-04-01T13:14:22.078Z"
     },
     {
       "appId": "227940",
@@ -734,7 +734,7 @@
       "lastTwoWeeks": 0,
       "highest": 11615,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:01.907Z"
+      "fetchedAt": "2026-04-01T13:14:23.785Z"
     },
     {
       "appId": "208650",
@@ -744,13 +744,13 @@
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 38,
+      "avg": 37,
       "median": 26,
       "atReview": 35,
       "lastTwoWeeks": 14,
       "highest": 241,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:03.819Z"
+      "fetchedAt": "2026-04-01T13:14:25.622Z"
     },
     {
       "appId": "3590",
@@ -760,13 +760,13 @@
       "releaseDate": null,
       "price": "4,99€",
       "totalReviews": null,
-      "avg": 38,
-      "median": 20,
-      "atReview": 34,
-      "lastTwoWeeks": 10,
-      "highest": 789,
+      "avg": 33,
+      "median": 18,
+      "atReview": 30,
+      "lastTwoWeeks": 9,
+      "highest": 370,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:05.638Z"
+      "fetchedAt": "2026-04-01T13:14:27.366Z"
     },
     {
       "appId": "433340",
@@ -776,13 +776,13 @@
       "releaseDate": null,
       "price": "18,99€",
       "totalReviews": null,
-      "avg": 27,
-      "median": 18,
-      "atReview": 25,
+      "avg": 32,
+      "median": 17,
+      "atReview": 30,
       "lastTwoWeeks": 9,
-      "highest": 265,
+      "highest": 1018,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:07.460Z"
+      "fetchedAt": "2026-04-01T13:14:29.107Z"
     },
     {
       "appId": "686810",
@@ -792,13 +792,13 @@
       "releaseDate": null,
       "price": "49,99€",
       "totalReviews": null,
-      "avg": 149,
-      "median": 32,
-      "atReview": 143,
-      "lastTwoWeeks": 15,
+      "avg": 147,
+      "median": 33,
+      "atReview": 142,
+      "lastTwoWeeks": 16,
       "highest": 2865,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:09.465Z"
+      "fetchedAt": "2026-04-01T13:14:30.901Z"
     },
     {
       "appId": "508440",
@@ -808,13 +808,13 @@
       "releaseDate": null,
       "price": "18,99€",
       "totalReviews": null,
-      "avg": 31,
+      "avg": 32,
       "median": 9,
-      "atReview": 29,
+      "atReview": 31,
       "lastTwoWeeks": 8,
       "highest": 1031,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:11.319Z"
+      "fetchedAt": "2026-04-01T13:14:32.942Z"
     },
     {
       "appId": "236850",
@@ -824,13 +824,13 @@
       "releaseDate": null,
       "price": "49,99€",
       "totalReviews": null,
-      "avg": 777,
+      "avg": 785,
       "median": 220,
-      "atReview": 762,
-      "lastTwoWeeks": 20,
+      "atReview": 773,
+      "lastTwoWeeks": 19,
       "highest": 12788,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:13.325Z"
+      "fetchedAt": "2026-04-01T13:14:34.728Z"
     },
     {
       "appId": "244850",
@@ -846,7 +846,7 @@
       "lastTwoWeeks": 19,
       "highest": 12210,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:15.431Z"
+      "fetchedAt": "2026-04-01T13:14:36.437Z"
     },
     {
       "appId": "1092790",
@@ -856,13 +856,13 @@
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 28,
-      "median": 18,
-      "atReview": 26,
+      "avg": 31,
+      "median": 19,
+      "atReview": 29,
       "lastTwoWeeks": 10,
-      "highest": 315,
+      "highest": 361,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:17.389Z"
+      "fetchedAt": "2026-04-01T13:14:38.198Z"
     },
     {
       "appId": "1868140",
@@ -878,7 +878,7 @@
       "lastTwoWeeks": 20,
       "highest": 243,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:19.209Z"
+      "fetchedAt": "2026-04-01T13:14:39.991Z"
     },
     {
       "appId": "457140",
@@ -894,7 +894,7 @@
       "lastTwoWeeks": 24,
       "highest": 5153,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:20.970Z"
+      "fetchedAt": "2026-04-01T13:14:41.701Z"
     },
     {
       "appId": "220200",
@@ -910,7 +910,7 @@
       "lastTwoWeeks": 14,
       "highest": 1213,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:22.717Z"
+      "fetchedAt": "2026-04-01T13:14:43.395Z"
     },
     {
       "appId": "1158310",
@@ -920,13 +920,13 @@
       "releaseDate": null,
       "price": "49,99€",
       "totalReviews": null,
-      "avg": 297,
-      "median": 83,
-      "atReview": 289,
+      "avg": 302,
+      "median": 88,
+      "atReview": 294,
       "lastTwoWeeks": 28,
       "highest": 5443,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:24.705Z"
+      "fetchedAt": "2026-04-01T13:14:45.154Z"
     },
     {
       "appId": "222880",
@@ -942,7 +942,7 @@
       "lastTwoWeeks": 3,
       "highest": 1205,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:26.606Z"
+      "fetchedAt": "2026-04-01T13:14:46.867Z"
     },
     {
       "appId": "594570",
@@ -952,13 +952,13 @@
       "releaseDate": null,
       "price": "59,99€",
       "totalReviews": null,
-      "avg": 342,
+      "avg": 343,
       "median": 112,
       "atReview": 310,
       "lastTwoWeeks": 5,
       "highest": 4639,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:28.431Z"
+      "fetchedAt": "2026-04-01T13:14:48.666Z"
     },
     {
       "appId": "323190",
@@ -969,12 +969,12 @@
       "price": "29,99€",
       "totalReviews": null,
       "avg": 43,
-      "median": 22,
+      "median": 21,
       "atReview": 40,
-      "lastTwoWeeks": 10,
+      "lastTwoWeeks": 11,
       "highest": 427,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:30.313Z"
+      "fetchedAt": "2026-04-01T13:14:50.453Z"
     },
     {
       "appId": "674940",
@@ -990,7 +990,7 @@
       "lastTwoWeeks": 2,
       "highest": 212,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:32.138Z"
+      "fetchedAt": "2026-04-01T13:14:52.263Z"
     },
     {
       "appId": "1142710",
@@ -1000,13 +1000,13 @@
       "releaseDate": null,
       "price": "59,99€",
       "totalReviews": null,
-      "avg": 310,
-      "median": 101,
-      "atReview": 301,
+      "avg": 317,
+      "median": 103,
+      "atReview": 308,
       "lastTwoWeeks": 28,
       "highest": 4239,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:33.866Z"
+      "fetchedAt": "2026-04-01T13:14:54.112Z"
     },
     {
       "appId": "386360",
@@ -1022,7 +1022,7 @@
       "lastTwoWeeks": 0,
       "highest": 9415,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:35.716Z"
+      "fetchedAt": "2026-04-01T13:14:55.993Z"
     },
     {
       "appId": "301520",
@@ -1038,7 +1038,7 @@
       "lastTwoWeeks": 0,
       "highest": 1773,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:37.540Z"
+      "fetchedAt": "2026-04-01T13:14:57.785Z"
     },
     {
       "appId": "305620",
@@ -1048,13 +1048,13 @@
       "releaseDate": null,
       "price": "2,99€",
       "totalReviews": null,
-      "avg": 144,
-      "median": 18,
-      "atReview": 141,
-      "lastTwoWeeks": 14,
-      "highest": 4832,
+      "avg": 159,
+      "median": 29,
+      "atReview": 158,
+      "lastTwoWeeks": 10,
+      "highest": 4517,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:39.612Z"
+      "fetchedAt": "2026-04-01T13:14:59.832Z"
     },
     {
       "appId": "677620",
@@ -1070,7 +1070,7 @@
       "lastTwoWeeks": 0,
       "highest": 2170,
       "sampleSize": 166,
-      "fetchedAt": "2026-04-01T12:50:41.280Z"
+      "fetchedAt": "2026-04-01T13:15:01.235Z"
     },
     {
       "appId": "424840",
@@ -1083,10 +1083,10 @@
       "avg": 9,
       "median": 6,
       "atReview": 8,
-      "lastTwoWeeks": 4,
+      "lastTwoWeeks": 5,
       "highest": 117,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:43.117Z"
+      "fetchedAt": "2026-04-01T13:15:03.091Z"
     },
     {
       "appId": "231430",
@@ -1102,7 +1102,7 @@
       "lastTwoWeeks": 11,
       "highest": 8050,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:45.207Z"
+      "fetchedAt": "2026-04-01T13:15:04.918Z"
     },
     {
       "appId": "1167630",
@@ -1112,13 +1112,13 @@
       "releaseDate": null,
       "price": "29,99€",
       "totalReviews": null,
-      "avg": 37,
-      "median": 18,
-      "atReview": 36,
-      "lastTwoWeeks": 9,
+      "avg": 35,
+      "median": 17,
+      "atReview": 34,
+      "lastTwoWeeks": 8,
       "highest": 326,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:47.102Z"
+      "fetchedAt": "2026-04-01T13:15:06.848Z"
     },
     {
       "appId": "356190",
@@ -1128,13 +1128,13 @@
       "releaseDate": null,
       "price": "39,99€",
       "totalReviews": null,
-      "avg": 56,
-      "median": 39,
-      "atReview": 49,
+      "avg": 51,
+      "median": 36,
+      "atReview": 45,
       "lastTwoWeeks": 22,
       "highest": 636,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:48.984Z"
+      "fetchedAt": "2026-04-01T13:15:08.685Z"
     },
     {
       "appId": "779340",
@@ -1146,27 +1146,27 @@
       "totalReviews": null,
       "avg": 296,
       "median": 99,
-      "atReview": 273,
+      "atReview": 274,
       "lastTwoWeeks": 17,
       "highest": 3117,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:50.898Z"
+      "fetchedAt": "2026-04-01T13:15:10.979Z"
     },
     {
       "appId": "1313140",
       "name": "Cult of the Lamb",
-      "genre": "strategy",
+      "genre": "colony",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/19f32bb477a6e9d058e05193b4e282149bd70644/header.jpg?t=1769836674",
       "releaseDate": null,
       "price": "22,99€",
       "totalReviews": null,
-      "avg": 36,
-      "median": 25,
-      "atReview": 33,
-      "lastTwoWeeks": 14,
+      "avg": 37,
+      "median": 26,
+      "atReview": 34,
+      "lastTwoWeeks": 15,
       "highest": 301,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:52.955Z"
+      "fetchedAt": "2026-04-01T13:15:13.106Z"
     },
     {
       "appId": "282070",
@@ -1182,7 +1182,7 @@
       "lastTwoWeeks": 12,
       "highest": 936,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:55.557Z"
+      "fetchedAt": "2026-04-01T13:15:15.131Z"
     },
     {
       "appId": "268500",
@@ -1192,29 +1192,29 @@
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 164,
-      "median": 65,
-      "atReview": 152,
+      "avg": 153,
+      "median": 66,
+      "atReview": 142,
       "lastTwoWeeks": 19,
-      "highest": 2344,
+      "highest": 1938,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:50:57.350Z"
+      "fetchedAt": "2026-04-01T13:15:16.916Z"
     },
     {
       "appId": "221380",
       "name": "Age of Empires II (Retired)",
-      "genre": "strategy",
+      "genre": "city",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221380/header.jpg?t=1705596928",
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 478,
-      "median": 71,
+      "avg": 484,
+      "median": 84,
       "atReview": 470,
-      "lastTwoWeeks": 9,
+      "lastTwoWeeks": 6,
       "highest": 12822,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:00.478Z"
+      "fetchedAt": "2026-04-01T13:15:19.028Z"
     },
     {
       "appId": "359320",
@@ -1224,13 +1224,13 @@
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 376,
+      "avg": 377,
       "median": 103,
-      "atReview": 354,
+      "atReview": 356,
       "lastTwoWeeks": 35,
       "highest": 7135,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:02.250Z"
+      "fetchedAt": "2026-04-01T13:15:21.273Z"
     },
     {
       "appId": "233860",
@@ -1246,7 +1246,7 @@
       "lastTwoWeeks": 32,
       "highest": 1879,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:04.103Z"
+      "fetchedAt": "2026-04-01T13:15:23.489Z"
     },
     {
       "appId": "460930",
@@ -1256,13 +1256,13 @@
       "releaseDate": null,
       "price": "49,99€",
       "totalReviews": null,
-      "avg": 45,
-      "median": 27,
-      "atReview": 40,
+      "avg": 46,
+      "median": 28,
+      "atReview": 43,
       "lastTwoWeeks": 14,
       "highest": 382,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:05.956Z"
+      "fetchedAt": "2026-04-01T13:15:25.291Z"
     },
     {
       "appId": "2835570",
@@ -1275,10 +1275,10 @@
       "avg": 6,
       "median": 4,
       "atReview": 5,
-      "lastTwoWeeks": 3,
-      "highest": 34,
+      "lastTwoWeeks": 2,
+      "highest": 58,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:07.889Z"
+      "fetchedAt": "2026-04-01T13:15:27.376Z"
     },
     {
       "appId": "613100",
@@ -1288,13 +1288,13 @@
       "releaseDate": null,
       "price": "6,12€",
       "totalReviews": null,
-      "avg": 49,
-      "median": 16,
-      "atReview": 45,
-      "lastTwoWeeks": 9,
+      "avg": 40,
+      "median": 15,
+      "atReview": 37,
+      "lastTwoWeeks": 10,
       "highest": 1045,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:09.722Z"
+      "fetchedAt": "2026-04-01T13:15:29.181Z"
     },
     {
       "appId": "376210",
@@ -1310,7 +1310,7 @@
       "lastTwoWeeks": 26,
       "highest": 2510,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:11.688Z"
+      "fetchedAt": "2026-04-01T13:15:31.001Z"
     },
     {
       "appId": "466240",
@@ -1326,7 +1326,7 @@
       "lastTwoWeeks": 0,
       "highest": 5146,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:13.445Z"
+      "fetchedAt": "2026-04-01T13:15:32.807Z"
     },
     {
       "appId": "1046930",
@@ -1342,7 +1342,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": 0,
-      "fetchedAt": "2026-04-01T12:51:14.166Z"
+      "fetchedAt": "2026-04-01T13:15:33.542Z"
     },
     {
       "appId": "214950",
@@ -1352,13 +1352,13 @@
       "releaseDate": null,
       "price": "59,99€",
       "totalReviews": null,
-      "avg": 222,
-      "median": 64,
-      "atReview": 205,
-      "lastTwoWeeks": 16,
-      "highest": 2255,
+      "avg": 203,
+      "median": 61,
+      "atReview": 191,
+      "lastTwoWeeks": 15,
+      "highest": 2090,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:15.969Z"
+      "fetchedAt": "2026-04-01T13:15:35.342Z"
     },
     {
       "appId": "703080",
@@ -1368,13 +1368,13 @@
       "releaseDate": null,
       "price": "44,99€",
       "totalReviews": null,
-      "avg": 74,
-      "median": 33,
-      "atReview": 64,
-      "lastTwoWeeks": 18,
-      "highest": 837,
-      "sampleSize": 99,
-      "fetchedAt": "2026-04-01T12:51:16.791Z"
+      "avg": 91,
+      "median": 32,
+      "atReview": 84,
+      "lastTwoWeeks": 15,
+      "highest": 1950,
+      "sampleSize": 200,
+      "fetchedAt": "2026-04-01T13:15:37.124Z"
     },
     {
       "appId": "823130",
@@ -1390,7 +1390,7 @@
       "lastTwoWeeks": 0,
       "highest": 1321,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:18.492Z"
+      "fetchedAt": "2026-04-01T13:15:38.945Z"
     },
     {
       "appId": "582660",
@@ -1400,13 +1400,13 @@
       "releaseDate": null,
       "price": "9,99€",
       "totalReviews": null,
-      "avg": 1560,
-      "median": 41,
-      "atReview": 1532,
-      "lastTwoWeeks": 52,
+      "avg": 1272,
+      "median": 39,
+      "atReview": 1251,
+      "lastTwoWeeks": 46,
       "highest": 39019,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:20.313Z"
+      "fetchedAt": "2026-04-01T13:15:40.688Z"
     },
     {
       "appId": "1366540",
@@ -1422,7 +1422,7 @@
       "lastTwoWeeks": 24,
       "highest": 1550,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:22.150Z"
+      "fetchedAt": "2026-04-01T13:15:42.538Z"
     },
     {
       "appId": "1248130",
@@ -1432,13 +1432,13 @@
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 259,
-      "median": 69,
-      "atReview": 246,
+      "avg": 230,
+      "median": 68,
+      "atReview": 220,
       "lastTwoWeeks": 18,
       "highest": 5526,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:24.158Z"
+      "fetchedAt": "2026-04-01T13:15:44.357Z"
     },
     {
       "appId": "761890",
@@ -1448,13 +1448,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 1323,
+      "avg": 1324,
       "median": 517,
       "atReview": 957,
       "lastTwoWeeks": 5,
-      "highest": 17048,
+      "highest": 17098,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:25.937Z"
+      "fetchedAt": "2026-04-01T13:15:46.095Z"
     },
     {
       "appId": "291480",
@@ -1468,9 +1468,9 @@
       "median": 35,
       "atReview": 206,
       "lastTwoWeeks": 0,
-      "highest": 14463,
+      "highest": 14465,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:27.729Z"
+      "fetchedAt": "2026-04-01T13:15:47.943Z"
     },
     {
       "appId": "550650",
@@ -1486,7 +1486,7 @@
       "lastTwoWeeks": 0,
       "highest": 3804,
       "sampleSize": 23,
-      "fetchedAt": "2026-04-01T12:51:28.512Z"
+      "fetchedAt": "2026-04-01T13:15:48.815Z"
     },
     {
       "appId": "1466860",
@@ -1496,13 +1496,13 @@
       "releaseDate": null,
       "price": "39,99€",
       "totalReviews": null,
-      "avg": 163,
-      "median": 44,
-      "atReview": 151,
-      "lastTwoWeeks": 23,
+      "avg": 180,
+      "median": 47,
+      "atReview": 172,
+      "lastTwoWeeks": 22,
       "highest": 2321,
-      "sampleSize": 99,
-      "fetchedAt": "2026-04-01T12:51:29.409Z"
+      "sampleSize": 200,
+      "fetchedAt": "2026-04-01T13:15:50.501Z"
     },
     {
       "appId": "1454400",
@@ -1518,7 +1518,7 @@
       "lastTwoWeeks": 44,
       "highest": 3973,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:31.278Z"
+      "fetchedAt": "2026-04-01T13:15:52.252Z"
     },
     {
       "appId": "1113000",
@@ -1528,13 +1528,13 @@
       "releaseDate": null,
       "price": "19,99€",
       "totalReviews": null,
-      "avg": 81,
+      "avg": 76,
       "median": 67,
-      "atReview": 75,
-      "lastTwoWeeks": 21,
+      "atReview": 71,
+      "lastTwoWeeks": 17,
       "highest": 312,
-      "sampleSize": 99,
-      "fetchedAt": "2026-04-01T12:51:32.161Z"
+      "sampleSize": 200,
+      "fetchedAt": "2026-04-01T13:15:54.169Z"
     },
     {
       "appId": "240720",
@@ -1544,13 +1544,13 @@
       "releaseDate": null,
       "price": "6,99€",
       "totalReviews": null,
-      "avg": 68,
-      "median": 5,
+      "avg": 67,
+      "median": 7,
       "atReview": 66,
-      "lastTwoWeeks": 5,
+      "lastTwoWeeks": 6,
       "highest": 11024,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:34.052Z"
+      "fetchedAt": "2026-04-01T13:15:55.885Z"
     },
     {
       "appId": "397900",
@@ -1566,7 +1566,7 @@
       "lastTwoWeeks": 0,
       "highest": 2611,
       "sampleSize": 48,
-      "fetchedAt": "2026-04-01T12:51:34.853Z"
+      "fetchedAt": "2026-04-01T13:15:56.624Z"
     },
     {
       "appId": "602960",
@@ -1577,12 +1577,12 @@
       "price": "34,99€",
       "totalReviews": null,
       "avg": 85,
-      "median": 47,
-      "atReview": 76,
-      "lastTwoWeeks": 23,
-      "highest": 706,
+      "median": 48,
+      "atReview": 78,
+      "lastTwoWeeks": 22,
+      "highest": 1000,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:36.867Z"
+      "fetchedAt": "2026-04-01T13:15:58.437Z"
     },
     {
       "appId": "212680",
@@ -1592,14 +1592,14 @@
       "releaseDate": null,
       "price": "9,99€",
       "totalReviews": null,
-      "avg": 101,
-      "median": 42,
-      "atReview": 91,
-      "lastTwoWeeks": 8,
+      "avg": 92,
+      "median": 41,
+      "atReview": 83,
+      "lastTwoWeeks": 7,
       "highest": 1473,
       "sampleSize": 200,
-      "fetchedAt": "2026-04-01T12:51:38.769Z"
+      "fetchedAt": "2026-04-01T13:16:00.152Z"
     }
   ],
-  "lastUpdated": "2026-04-01T12:51:39.283Z"
+  "lastUpdated": "2026-04-01T13:16:00.653Z"
 }

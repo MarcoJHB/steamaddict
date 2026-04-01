@@ -17,8 +17,8 @@ const db                = require("../src/lib/db");
 
   try {
     // Step 1: Get top 100 games
-    console.log("Fetching top strategy & management games from SteamSpy...\n");
-    const games = await fetchTopGames(["strategy", "management"], 100);
+    console.log("Fetching top strategy, management, colony sim, and city building games from SteamSpy...\n");
+    const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
 
     // Step 2: Fetch playtime stats
     console.log(`\nFetching playtime stats for ${games.length} games...\n`);

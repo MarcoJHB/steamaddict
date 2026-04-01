@@ -51,15 +51,22 @@ async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
     console.error("Error fetching from SteamSpy:", e.message);
   }
 
-  // Convert to array, sort by score, take top 100
+  // Convert to array, sort by score, take top N
   const sorted = Array.from(gameMap.values())
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
-    .map(g => ({
-      appId: g.appId,
-      name: g.name,
-      genre: g.tags.includes("management") ? "management" : "strategy",
-    }));
+    .map(g => {
+      // Assign genre based on tags
+      let genre = "strategy";
+      if (g.tags.includes("management")) genre = "management";
+      else if (g.tags.includes("colony sim")) genre = "colony";
+      else if (g.tags.includes("city builder")) genre = "city";
+      return {
+        appId: g.appId,
+        name: g.name,
+        genre,
+      };
+    });
 
   console.log(`Found ${sorted.length} top strategy/management games`);
   return sorted;
