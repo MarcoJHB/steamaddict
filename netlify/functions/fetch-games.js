@@ -1,9 +1,7 @@
 // netlify/functions/fetch-games.js
-// POST /api/fetch-games — triggers a fresh fetch from Steam and updates the DB
-// Protect this with a secret token in production (set FETCH_SECRET env var)
+// POST /api/fetch-games — triggers a fresh fetch of top strategy/management games from Steam and updates the DB
 
-const { fetchAllGames } = require("../../src/lib/steamFetcher");
-const { GAMES }         = require("../../src/lib/games");
+const { fetchAllGames, fetchTopGames } = require("../../src/lib/steamFetcher");
 const db                = require("../../src/lib/db");
 
 exports.handler = async (event) => {
@@ -20,26 +18,28 @@ exports.handler = async (event) => {
     return { statusCode: 405, headers, body: JSON.stringify({ error: "Method not allowed" }) };
   }
 
-  // Optional: protect with a secret token
-  const secret = process.env.FETCH_SECRET;
-  if (secret) {
-    const provided = event.headers["x-fetch-secret"] || "";
-    if (provided !== secret) {
-      return { statusCode: 401, headers, body: JSON.stringify({ error: "Unauthorized" }) };
-    }
-  }
-
   try {
-    console.log("Starting Steam data fetch...");
-    const games = await fetchAllGames(GAMES);
-    await db.save(games);
+    console.log("Fetching top strategy and management games from Steam...");
+    
+    // Step 1: Get top 100 games
+    const games = await fetchTopGames(["strategy", "management"], 100);
+    
+    // Step 2: Fetch playtime stats for each game
+    const enrichedGames = await fetchAllGames(games, {
+      onProgress: ({ game, index, total }) => {
+        console.log(`  [${index + 1}/${total}] ${game}...`);
+      },
+    });
+    
+    // Step 3: Save to DB
+    await db.save(enrichedGames);
 
     return {
       statusCode: 200,
       headers,
       body: JSON.stringify({
         success: true,
-        count: games.length,
+        count: enrichedGames.length,
         lastUpdated: new Date().toISOString(),
       }),
     };

@@ -8,8 +8,61 @@ const STEAM_REVIEW_URL = (appId) =>
 const STEAM_APP_URL = (appId) =>
   `https://store.steampowered.com/api/appdetails?appids=${appId}&filters=basic,price_overview`;
 
+const STEAMSPY_TAG_URL = (tag) =>
+  `https://steamspy.com/api.php?request=tag&tag=${tag}`;
+
 async function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
+}
+
+// Fetch top strategy and management games from SteamSpy
+async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
+  const gameMap = new Map();
+
+  try {
+    for (const tag of tags) {
+      console.log(`Fetching ${tag} games from SteamSpy...`);
+      const res = await fetch(STEAMSPY_TAG_URL(tag));
+      const data = await res.json();
+
+      if (data && typeof data === "object") {
+        // SteamSpy returns games keyed by appId
+        for (const [appIdStr, gameInfo] of Object.entries(data)) {
+          const appId = parseInt(appIdStr);
+          if (!isNaN(appId) && gameInfo?.name) {
+            // Store with a score based on reviews and ownership
+            const score = (gameInfo.positive || 0) + (gameInfo.negative || 0);
+            if (!gameMap.has(appId)) {
+              gameMap.set(appId, {
+                appId: appIdStr,
+                name: gameInfo.name,
+                score,
+                tags: [tag],
+              });
+            } else {
+              gameMap.get(appId).tags.push(tag);
+            }
+          }
+        }
+      }
+      await sleep(500); // be polite to SteamSpy
+    }
+  } catch (e) {
+    console.error("Error fetching from SteamSpy:", e.message);
+  }
+
+  // Convert to array, sort by score, take top 100
+  const sorted = Array.from(gameMap.values())
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(g => ({
+      appId: g.appId,
+      name: g.name,
+      genre: g.tags.includes("management") ? "management" : "strategy",
+    }));
+
+  console.log(`Found ${sorted.length} top strategy/management games`);
+  return sorted;
 }
 
 // Fetch up to `targetReviews` reviews for a single game
@@ -114,4 +167,4 @@ async function fetchAllGames(gamesList, { onProgress } = {}) {
   return results;
 }
 
-module.exports = { fetchAllGames, fetchGameReviews, computeStats };
+module.exports = { fetchAllGames, fetchTopGames, fetchGameReviews, computeStats };
