@@ -15,8 +15,8 @@ const handler = async () => {
   try {
     console.log("[Scheduled] Starting hourly Steam data fetch...");
     
-    // Step 1: Fetch top 100 games
-    const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
+    // Step 1: Fetch top 20 management games
+    const games = await fetchTopGames(["management"], 20);
     console.log(`[Scheduled] Fetched ${games.length} games, fetching stats...`);
     
     // Step 2: Fetch playtime stats

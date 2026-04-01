@@ -26,8 +26,8 @@ exports.handler = async (event) => {
   try {
     console.log("Manually triggered Steam data fetch...");
     
-    // Step 1: Get top 100 games
-    const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
+    // Step 1: Get top 20 management games
+    const games = await fetchTopGames(["management"], 20);
     
     // Step 2: Fetch playtime stats for each game
     const enrichedGames = await fetchAllGames(games, {

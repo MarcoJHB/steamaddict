@@ -21,9 +21,9 @@ const JSON_PATH = path.join(__dirname, "../data/games.json");
   const start = Date.now();
 
   try {
-    // Step 1: Get top 100 games
-    console.log("Fetching top strategy, management, colony sim, and city building games from SteamSpy...\n");
-    const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
+    // Step 1: Get top 20 management games
+    console.log("Fetching top 20 management games from SteamSpy...\n");
+    const games = await fetchTopGames(["management"], 20);
 
     // Step 2: Fetch playtime stats
     console.log(`\nFetching playtime stats for ${games.length} games...\n`);
@@ -44,9 +44,9 @@ const JSON_PATH = path.join(__dirname, "../data/games.json");
     fs.writeFileSync(JSON_PATH, JSON.stringify(jsonPayload, null, 2), "utf8");
 
     const elapsed = ((Date.now() - start) / 1000).toFixed(1);
-    console.log(`\n\nDone in ${elapsed}s`);
-    console.log(`✓ Saved ${enrichedGames.length} games to data/games.csv`);
-    console.log(`✓ Saved ${enrichedGames.length} games to data/games.json`);
+    console.log(`Done in ${elapsed}s`);
+    console.log(`✓ Saved ${enrichedGames.length} management games to data/games.csv`);
+    console.log(`✓ Saved ${enrichedGames.length} management games to data/games.json`);
     console.log(`\nTop 5 by avg playtime:`);
 
     enrichedGames
