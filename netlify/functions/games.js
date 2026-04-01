@@ -15,7 +15,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    const payload = db.getAll();
+    const payload = await db.getAll();
     return {
       statusCode: 200,
       headers,

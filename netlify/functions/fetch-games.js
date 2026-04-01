@@ -32,7 +32,7 @@ exports.handler = async (event) => {
   try {
     console.log("Starting Steam data fetch...");
     const games = await fetchAllGames(GAMES);
-    db.save(games);
+    await db.save(games);
 
     return {
       statusCode: 200,
