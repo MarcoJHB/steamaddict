@@ -1,8 +1,13 @@
 // netlify/functions/fetch-games.js
-// POST /api/fetch-games — triggers a fresh fetch of top strategy/management games from Steam and updates the DB
+// POST /api/fetch-games — manually trigger a fresh fetch and save to CSV + JSON
 
 const { fetchAllGames, fetchTopGames } = require("../../src/lib/steamFetcher");
-const db                = require("../../src/lib/db");
+const { toCSV } = require("../../src/lib/csvUtils");
+const fs = require("fs");
+const path = require("path");
+
+const CSV_PATH = path.join(__dirname, "../../data/games.csv");
+const JSON_PATH = path.join(__dirname, "../../data/games.json");
 
 exports.handler = async (event) => {
   const headers = {
@@ -19,7 +24,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    console.log("Fetching top strategy, management, colony sim, and city building games from Steam...");
+    console.log("Manually triggered Steam data fetch...");
     
     // Step 1: Get top 100 games
     const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
@@ -31,8 +36,14 @@ exports.handler = async (event) => {
       },
     });
     
-    // Step 3: Save to DB
-    await db.save(enrichedGames);
+    // Step 3: Save to CSV
+    const csv = toCSV(enrichedGames);
+    fs.mkdirSync(path.dirname(CSV_PATH), { recursive: true });
+    fs.writeFileSync(CSV_PATH, csv, "utf8");
+    
+    // Step 4: Save to JSON
+    const jsonPayload = { games: enrichedGames, lastUpdated: new Date().toISOString() };
+    fs.writeFileSync(JSON_PATH, JSON.stringify(jsonPayload, null, 2), "utf8");
 
     return {
       statusCode: 200,

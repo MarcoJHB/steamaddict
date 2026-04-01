@@ -3,11 +3,16 @@
 // Run with: node scripts/fetch.js
 // or:        npm run fetch
 //
-// Fetches the top 100 strategy and management games and writes results to data/games.json
-// Commit that file to git so Netlify serves it immediately on deploy
+// Fetches the top 100 strategy and management games from SteamSpy
+// Saves to both CSV (for audit/backup) and JSON (for serving)
 
 const { fetchAllGames, fetchTopGames } = require("../src/lib/steamFetcher");
-const db                = require("../src/lib/db");
+const { toCSV } = require("../src/lib/csvUtils");
+const fs = require("fs");
+const path = require("path");
+
+const CSV_PATH = path.join(__dirname, "../data/games.csv");
+const JSON_PATH = path.join(__dirname, "../data/games.json");
 
 (async () => {
   console.log(`\nSteam Strategy & Management Games Fetcher`);
@@ -29,12 +34,19 @@ const db                = require("../src/lib/db");
       },
     });
 
-    // Step 3: Save to DB
-    db.save(enrichedGames);
+    // Step 3: Save to CSV
+    const csv = toCSV(enrichedGames);
+    fs.mkdirSync(path.dirname(CSV_PATH), { recursive: true });
+    fs.writeFileSync(CSV_PATH, csv, "utf8");
+
+    // Step 4: Save to JSON
+    const jsonPayload = { games: enrichedGames, lastUpdated: new Date().toISOString() };
+    fs.writeFileSync(JSON_PATH, JSON.stringify(jsonPayload, null, 2), "utf8");
 
     const elapsed = ((Date.now() - start) / 1000).toFixed(1);
     console.log(`\n\nDone in ${elapsed}s`);
-    console.log(`Saved ${enrichedGames.length} games to data/games.json`);
+    console.log(`✓ Saved ${enrichedGames.length} games to data/games.csv`);
+    console.log(`✓ Saved ${enrichedGames.length} games to data/games.json`);
     console.log(`\nTop 5 by avg playtime:`);
 
     enrichedGames
@@ -44,7 +56,7 @@ const db                = require("../src/lib/db");
         console.log(`  ${i + 1}. ${g.name.padEnd(30)} ${g.avg}h avg`);
       });
 
-    console.log(`\nCommit data/games.json to deploy updated data.\n`);
+    console.log(`\nCommit both CSV and JSON files to deploy updated data.\n`);
   } catch (e) {
     console.error("\nFetch failed:", e.message);
     process.exit(1);

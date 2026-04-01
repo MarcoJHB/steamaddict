@@ -14,7 +14,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:29.181Z"
+      "fetchedAt": "2026-04-01T13:43:49.544Z"
     },
     {
       "appId": "578080",
@@ -30,7 +30,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:29.484Z"
+      "fetchedAt": "2026-04-01T13:43:49.919Z"
     },
     {
       "appId": "359550",
@@ -46,7 +46,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:29.812Z"
+      "fetchedAt": "2026-04-01T13:43:50.197Z"
     },
     {
       "appId": "227300",
@@ -54,7 +54,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1773641450",
       "releaseDate": null,
-      "price": "19,99€",
+      "price": "$19.99",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -62,7 +62,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:30.102Z"
+      "fetchedAt": "2026-04-01T13:43:50.485Z"
     },
     {
       "appId": "381210",
@@ -70,7 +70,7 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/97f69c3ff1d7fc1237b7192265066dd4e9acd004/header_alt_assets_7.jpg?t=1773849399",
       "releaseDate": null,
-      "price": "19,99€",
+      "price": "$19.99",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -78,7 +78,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:30.386Z"
+      "fetchedAt": "2026-04-01T13:43:50.844Z"
     },
     {
       "appId": "1086940",
@@ -86,7 +86,7 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1773079016",
       "releaseDate": null,
-      "price": "59,99€",
+      "price": "$59.99",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -94,7 +94,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:30.691Z"
+      "fetchedAt": "2026-04-01T13:43:51.131Z"
     },
     {
       "appId": "236390",
@@ -110,7 +110,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:30.983Z"
+      "fetchedAt": "2026-04-01T13:43:51.409Z"
     },
     {
       "appId": "218620",
@@ -126,7 +126,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:31.441Z"
+      "fetchedAt": "2026-04-01T13:43:51.895Z"
     },
     {
       "appId": "242760",
@@ -142,7 +142,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:31.775Z"
+      "fetchedAt": "2026-04-01T13:43:52.211Z"
     },
     {
       "appId": "322330",
@@ -158,7 +158,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:32.136Z"
+      "fetchedAt": "2026-04-01T13:43:52.523Z"
     },
     {
       "appId": "620",
@@ -174,7 +174,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:32.425Z"
+      "fetchedAt": "2026-04-01T13:43:52.807Z"
     },
     {
       "appId": "322170",
@@ -190,7 +190,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:32.708Z"
+      "fetchedAt": "2026-04-01T13:43:53.110Z"
     },
     {
       "appId": "251570",
@@ -206,7 +206,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:32.990Z"
+      "fetchedAt": "2026-04-01T13:43:53.391Z"
     },
     {
       "appId": "960090",
@@ -222,7 +222,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:33.276Z"
+      "fetchedAt": "2026-04-01T13:43:53.711Z"
     },
     {
       "appId": "289070",
@@ -230,7 +230,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1740607040",
       "releaseDate": null,
-      "price": "$59.99",
+      "price": "59,99€",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -238,7 +238,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:33.561Z"
+      "fetchedAt": "2026-04-01T13:43:54.010Z"
     },
     {
       "appId": "444090",
@@ -254,7 +254,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:33.860Z"
+      "fetchedAt": "2026-04-01T13:43:54.324Z"
     },
     {
       "appId": "648800",
@@ -270,7 +270,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:34.144Z"
+      "fetchedAt": "2026-04-01T13:43:54.670Z"
     },
     {
       "appId": "394360",
@@ -286,7 +286,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:34.432Z"
+      "fetchedAt": "2026-04-01T13:43:54.969Z"
     },
     {
       "appId": "107410",
@@ -302,7 +302,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:34.737Z"
+      "fetchedAt": "2026-04-01T13:43:55.307Z"
     },
     {
       "appId": "255710",
@@ -318,7 +318,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:35.022Z"
+      "fetchedAt": "2026-04-01T13:43:55.589Z"
     },
     {
       "appId": "261550",
@@ -334,7 +334,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:35.320Z"
+      "fetchedAt": "2026-04-01T13:43:55.861Z"
     },
     {
       "appId": "10",
@@ -350,7 +350,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:35.625Z"
+      "fetchedAt": "2026-04-01T13:43:56.227Z"
     },
     {
       "appId": "526870",
@@ -358,7 +358,7 @@
       "genre": "strategy",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/header.jpg?t=1749717464",
       "releaseDate": null,
-      "price": "$39.99",
+      "price": "38,99€",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -366,7 +366,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:35.925Z"
+      "fetchedAt": "2026-04-01T13:43:56.525Z"
     },
     {
       "appId": "1468810",
@@ -382,7 +382,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:36.233Z"
+      "fetchedAt": "2026-04-01T13:43:56.805Z"
     },
     {
       "appId": "427520",
@@ -390,7 +390,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg?t=1763986204",
       "releaseDate": null,
-      "price": "$35.00",
+      "price": "32,--€",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -398,7 +398,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:36.582Z"
+      "fetchedAt": "2026-04-01T13:43:57.131Z"
     },
     {
       "appId": "700330",
@@ -414,7 +414,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:36.872Z"
+      "fetchedAt": "2026-04-01T13:43:57.410Z"
     },
     {
       "appId": "393380",
@@ -430,7 +430,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:37.204Z"
+      "fetchedAt": "2026-04-01T13:43:57.677Z"
     },
     {
       "appId": "294100",
@@ -438,7 +438,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/header.jpg?t=1774369681",
       "releaseDate": null,
-      "price": "$34.99",
+      "price": "31,99€",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -446,7 +446,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:37.489Z"
+      "fetchedAt": "2026-04-01T13:43:57.979Z"
     },
     {
       "appId": "8930",
@@ -462,7 +462,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:37.834Z"
+      "fetchedAt": "2026-04-01T13:43:58.310Z"
     },
     {
       "appId": "3164500",
@@ -478,7 +478,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:38.136Z"
+      "fetchedAt": "2026-04-01T13:43:58.590Z"
     },
     {
       "appId": "435150",
@@ -494,7 +494,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:38.487Z"
+      "fetchedAt": "2026-04-01T13:43:58.889Z"
     },
     {
       "appId": "281990",
@@ -510,7 +510,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:38.861Z"
+      "fetchedAt": "2026-04-01T13:43:59.179Z"
     },
     {
       "appId": "646570",
@@ -526,7 +526,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:39.168Z"
+      "fetchedAt": "2026-04-01T13:43:59.464Z"
     },
     {
       "appId": "240",
@@ -542,7 +542,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:39.458Z"
+      "fetchedAt": "2026-04-01T13:43:59.884Z"
     },
     {
       "appId": "400",
@@ -558,7 +558,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:39.801Z"
+      "fetchedAt": "2026-04-01T13:44:00.154Z"
     },
     {
       "appId": "518790",
@@ -574,7 +574,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:40.150Z"
+      "fetchedAt": "2026-04-01T13:44:00.477Z"
     },
     {
       "appId": "270880",
@@ -590,7 +590,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:40.511Z"
+      "fetchedAt": "2026-04-01T13:44:00.817Z"
     },
     {
       "appId": "48700",
@@ -606,7 +606,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:40.812Z"
+      "fetchedAt": "2026-04-01T13:44:01.096Z"
     },
     {
       "appId": "813780",
@@ -622,7 +622,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:41.110Z"
+      "fetchedAt": "2026-04-01T13:44:01.371Z"
     },
     {
       "appId": "2379780",
@@ -638,7 +638,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:41.410Z"
+      "fetchedAt": "2026-04-01T13:44:01.680Z"
     },
     {
       "appId": "1811260",
@@ -654,7 +654,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:41.734Z"
+      "fetchedAt": "2026-04-01T13:44:01.977Z"
     },
     {
       "appId": "304390",
@@ -670,7 +670,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:42.200Z"
+      "fetchedAt": "2026-04-01T13:44:02.506Z"
     },
     {
       "appId": "262060",
@@ -686,7 +686,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:42.502Z"
+      "fetchedAt": "2026-04-01T13:44:02.807Z"
     },
     {
       "appId": "444200",
@@ -702,7 +702,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:42.855Z"
+      "fetchedAt": "2026-04-01T13:44:03.144Z"
     },
     {
       "appId": "552990",
@@ -718,7 +718,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:43.203Z"
+      "fetchedAt": "2026-04-01T13:44:03.509Z"
     },
     {
       "appId": "227940",
@@ -734,7 +734,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:43.572Z"
+      "fetchedAt": "2026-04-01T13:44:03.831Z"
     },
     {
       "appId": "208650",
@@ -750,7 +750,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:43.924Z"
+      "fetchedAt": "2026-04-01T13:44:04.247Z"
     },
     {
       "appId": "3590",
@@ -766,7 +766,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:44.226Z"
+      "fetchedAt": "2026-04-01T13:44:04.676Z"
     },
     {
       "appId": "433340",
@@ -782,7 +782,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:44.559Z"
+      "fetchedAt": "2026-04-01T13:44:04.985Z"
     },
     {
       "appId": "686810",
@@ -798,7 +798,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:44.955Z"
+      "fetchedAt": "2026-04-01T13:44:05.384Z"
     },
     {
       "appId": "508440",
@@ -814,7 +814,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:45.244Z"
+      "fetchedAt": "2026-04-01T13:44:05.727Z"
     },
     {
       "appId": "236850",
@@ -830,7 +830,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:45.758Z"
+      "fetchedAt": "2026-04-01T13:44:06.269Z"
     },
     {
       "appId": "244850",
@@ -846,7 +846,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:46.094Z"
+      "fetchedAt": "2026-04-01T13:44:06.624Z"
     },
     {
       "appId": "1092790",
@@ -862,7 +862,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:46.405Z"
+      "fetchedAt": "2026-04-01T13:44:06.995Z"
     },
     {
       "appId": "1868140",
@@ -878,7 +878,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:46.714Z"
+      "fetchedAt": "2026-04-01T13:44:07.313Z"
     },
     {
       "appId": "457140",
@@ -886,7 +886,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1772559127",
       "releaseDate": null,
-      "price": "$24.99",
+      "price": "22,99€",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -894,7 +894,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:47.030Z"
+      "fetchedAt": "2026-04-01T13:44:07.620Z"
     },
     {
       "appId": "220200",
@@ -910,7 +910,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:47.345Z"
+      "fetchedAt": "2026-04-01T13:44:07.945Z"
     },
     {
       "appId": "1158310",
@@ -926,7 +926,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:47.683Z"
+      "fetchedAt": "2026-04-01T13:44:08.307Z"
     },
     {
       "appId": "222880",
@@ -942,7 +942,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:48.013Z"
+      "fetchedAt": "2026-04-01T13:44:08.629Z"
     },
     {
       "appId": "594570",
@@ -958,7 +958,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:48.344Z"
+      "fetchedAt": "2026-04-01T13:44:08.973Z"
     },
     {
       "appId": "323190",
@@ -974,7 +974,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:48.709Z"
+      "fetchedAt": "2026-04-01T13:44:09.282Z"
     },
     {
       "appId": "674940",
@@ -990,7 +990,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:49.043Z"
+      "fetchedAt": "2026-04-01T13:44:09.624Z"
     },
     {
       "appId": "1142710",
@@ -1006,7 +1006,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:49.401Z"
+      "fetchedAt": "2026-04-01T13:44:10.211Z"
     },
     {
       "appId": "386360",
@@ -1022,7 +1022,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:49.727Z"
+      "fetchedAt": "2026-04-01T13:44:10.666Z"
     },
     {
       "appId": "301520",
@@ -1038,7 +1038,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:50.047Z"
+      "fetchedAt": "2026-04-01T13:44:10.955Z"
     },
     {
       "appId": "305620",
@@ -1054,7 +1054,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:50.367Z"
+      "fetchedAt": "2026-04-01T13:44:11.301Z"
     },
     {
       "appId": "677620",
@@ -1070,7 +1070,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:50.755Z"
+      "fetchedAt": "2026-04-01T13:44:11.585Z"
     },
     {
       "appId": "424840",
@@ -1086,7 +1086,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:51.083Z"
+      "fetchedAt": "2026-04-01T13:44:11.906Z"
     },
     {
       "appId": "231430",
@@ -1102,7 +1102,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:51.477Z"
+      "fetchedAt": "2026-04-01T13:44:12.267Z"
     },
     {
       "appId": "1167630",
@@ -1118,7 +1118,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:51.806Z"
+      "fetchedAt": "2026-04-01T13:44:12.676Z"
     },
     {
       "appId": "356190",
@@ -1134,7 +1134,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:52.202Z"
+      "fetchedAt": "2026-04-01T13:44:13.005Z"
     },
     {
       "appId": "779340",
@@ -1150,7 +1150,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:52.566Z"
+      "fetchedAt": "2026-04-01T13:44:13.333Z"
     },
     {
       "appId": "1313140",
@@ -1166,7 +1166,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:52.896Z"
+      "fetchedAt": "2026-04-01T13:44:13.631Z"
     },
     {
       "appId": "282070",
@@ -1182,7 +1182,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:53.263Z"
+      "fetchedAt": "2026-04-01T13:44:13.935Z"
     },
     {
       "appId": "268500",
@@ -1198,7 +1198,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:53.599Z"
+      "fetchedAt": "2026-04-01T13:44:14.227Z"
     },
     {
       "appId": "221380",
@@ -1214,7 +1214,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:53.945Z"
+      "fetchedAt": "2026-04-01T13:44:14.513Z"
     },
     {
       "appId": "359320",
@@ -1230,7 +1230,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:54.340Z"
+      "fetchedAt": "2026-04-01T13:44:14.831Z"
     },
     {
       "appId": "233860",
@@ -1246,7 +1246,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:54.680Z"
+      "fetchedAt": "2026-04-01T13:44:15.203Z"
     },
     {
       "appId": "460930",
@@ -1262,7 +1262,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:55.021Z"
+      "fetchedAt": "2026-04-01T13:44:15.688Z"
     },
     {
       "appId": "2835570",
@@ -1278,7 +1278,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:55.316Z"
+      "fetchedAt": "2026-04-01T13:44:15.973Z"
     },
     {
       "appId": "613100",
@@ -1294,7 +1294,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:55.626Z"
+      "fetchedAt": "2026-04-01T13:44:16.283Z"
     },
     {
       "appId": "376210",
@@ -1310,7 +1310,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:55.935Z"
+      "fetchedAt": "2026-04-01T13:44:16.581Z"
     },
     {
       "appId": "466240",
@@ -1326,7 +1326,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:56.222Z"
+      "fetchedAt": "2026-04-01T13:44:16.916Z"
     },
     {
       "appId": "1046930",
@@ -1342,7 +1342,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:56.512Z"
+      "fetchedAt": "2026-04-01T13:44:17.192Z"
     },
     {
       "appId": "214950",
@@ -1358,7 +1358,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:56.854Z"
+      "fetchedAt": "2026-04-01T13:44:17.545Z"
     },
     {
       "appId": "703080",
@@ -1374,7 +1374,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:57.229Z"
+      "fetchedAt": "2026-04-01T13:44:17.922Z"
     },
     {
       "appId": "823130",
@@ -1390,7 +1390,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:57.518Z"
+      "fetchedAt": "2026-04-01T13:44:18.241Z"
     },
     {
       "appId": "582660",
@@ -1406,7 +1406,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:57.908Z"
+      "fetchedAt": "2026-04-01T13:44:18.527Z"
     },
     {
       "appId": "1366540",
@@ -1414,7 +1414,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1366540/2521472f3f71b6f179515fdcfa33d27c212ba3ce/header.jpg?t=1765532615",
       "releaseDate": null,
-      "price": "$19.99",
+      "price": "16,79€",
       "totalReviews": null,
       "avg": 0,
       "median": 0,
@@ -1422,7 +1422,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:58.269Z"
+      "fetchedAt": "2026-04-01T13:44:18.849Z"
     },
     {
       "appId": "1248130",
@@ -1438,7 +1438,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:58.594Z"
+      "fetchedAt": "2026-04-01T13:44:19.439Z"
     },
     {
       "appId": "761890",
@@ -1454,7 +1454,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:58.884Z"
+      "fetchedAt": "2026-04-01T13:44:19.743Z"
     },
     {
       "appId": "291480",
@@ -1470,7 +1470,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:59.180Z"
+      "fetchedAt": "2026-04-01T13:44:20.047Z"
     },
     {
       "appId": "550650",
@@ -1486,7 +1486,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:59.521Z"
+      "fetchedAt": "2026-04-01T13:44:20.438Z"
     },
     {
       "appId": "1466860",
@@ -1502,7 +1502,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:34:59.835Z"
+      "fetchedAt": "2026-04-01T13:44:20.734Z"
     },
     {
       "appId": "1454400",
@@ -1518,7 +1518,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:35:00.121Z"
+      "fetchedAt": "2026-04-01T13:44:21.021Z"
     },
     {
       "appId": "1113000",
@@ -1534,7 +1534,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:35:00.427Z"
+      "fetchedAt": "2026-04-01T13:44:21.324Z"
     },
     {
       "appId": "240720",
@@ -1550,7 +1550,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:35:00.722Z"
+      "fetchedAt": "2026-04-01T13:44:21.638Z"
     },
     {
       "appId": "397900",
@@ -1566,7 +1566,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:35:01.038Z"
+      "fetchedAt": "2026-04-01T13:44:21.938Z"
     },
     {
       "appId": "602960",
@@ -1582,7 +1582,7 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:35:01.360Z"
+      "fetchedAt": "2026-04-01T13:44:22.223Z"
     },
     {
       "appId": "212680",
@@ -1598,8 +1598,8 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": null,
-      "fetchedAt": "2026-04-01T13:35:01.686Z"
+      "fetchedAt": "2026-04-01T13:44:22.542Z"
     }
   ],
-  "lastUpdated": "2026-04-01T13:35:01.801Z"
+  "lastUpdated": "2026-04-01T13:44:22.654Z"
 }

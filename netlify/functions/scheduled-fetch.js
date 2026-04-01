@@ -1,18 +1,40 @@
 // netlify/functions/scheduled-fetch.js
-// Runs automatically every day at 6am UTC via Netlify's scheduled functions
-// Requires Netlify Pro or higher for scheduled functions
+// Runs automatically every hour via Netlify's scheduled functions
+// Fetches fresh data and stores as both CSV (for audit) and JSON (for serving)
 
 const { schedule } = require("@netlify/functions");
 const { fetchAllGames, fetchTopGames } = require("../../src/lib/steamFetcher");
-const db                = require("../../src/lib/db");
+const { toCSV, fromCSV } = require("../../src/lib/csvUtils");
+const fs = require("fs");
+const path = require("path");
+
+const CSV_PATH = path.join(__dirname, "../../data/games.csv");
+const JSON_PATH = path.join(__dirname, "../../data/games.json");
 
 const handler = async () => {
   try {
-    console.log("[Scheduled] Starting daily Steam fetch...");
+    console.log("[Scheduled] Starting hourly Steam data fetch...");
+    
+    // Step 1: Fetch top 100 games
     const games = await fetchTopGames(["strategy", "management", "colony sim", "city builder"], 100);
+    console.log(`[Scheduled] Fetched ${games.length} games, fetching stats...`);
+    
+    // Step 2: Fetch playtime stats
     const enrichedGames = await fetchAllGames(games);
-    await db.save(enrichedGames);
-    console.log(`[Scheduled] Done. Fetched ${enrichedGames.length} games.`);
+    console.log(`[Scheduled] Got stats for ${enrichedGames.length} games`);
+    
+    // Step 3: Save to CSV
+    const csv = toCSV(enrichedGames);
+    fs.mkdirSync(path.dirname(CSV_PATH), { recursive: true });
+    fs.writeFileSync(CSV_PATH, csv, "utf8");
+    console.log(`[Scheduled] Saved ${enrichedGames.length} games to CSV`);
+    
+    // Step 4: Save to JSON for instant serving
+    const jsonPayload = { games: enrichedGames, lastUpdated: new Date().toISOString() };
+    fs.writeFileSync(JSON_PATH, JSON.stringify(jsonPayload, null, 2), "utf8");
+    console.log(`[Scheduled] Updated JSON file`);
+    
+    console.log("[Scheduled] Done!");
     return { statusCode: 200 };
   } catch (e) {
     console.error("[Scheduled] Error:", e.message);
@@ -20,5 +42,5 @@ const handler = async () => {
   }
 };
 
-// Runs every day at 06:00 UTC
-module.exports.handler = schedule("0 6 * * *", handler);
+// Runs every hour (0 minutes past every hour)
+module.exports.handler = schedule("0 * * * *", handler);
