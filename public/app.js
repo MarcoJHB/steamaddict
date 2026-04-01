@@ -117,18 +117,15 @@ function renderTable() {
             <a class="game-name" href="https://steamcommunity.com/app/${g.appId}" target="_blank" rel="noopener">${g.name}</a>
           </div>
         </td>
-        <td><span class="genre-tag genre-${g.genre || "survival"}">${g.genre || "—"}</span></td>
         <td class="col-num">
           <div class="bar-wrap">
             <div class="bar" style="width:${barWidth}px"></div>
             <span class="num-cell ${numClass(g.avg)}">${fmt(g.avg)}h</span>
           </div>
         </td>
-        <td class="col-num num-cell ${numClass(g.atReview)}">${fmt(g.atReview)}h</td>
         <td class="col-num num-cell ${numClass(g.lastTwoWeeks)}">${fmt(g.lastTwoWeeks)}h</td>
-        <td class="col-num num-cell ${numClass(g.median)}">${fmt(g.median)}h</td>
         <td class="col-num num-cell ${numClass(g.rating)}">${g.rating}%</td>
-        <td class="col-num num-cell num-low">${fmtK(g.reviewCount || 0)}</td>
+        <td class="col-num num-cell num-low">${fmtK(g.sampleSize || "0")}</td>
       </tr>
     `;
   }).join("");

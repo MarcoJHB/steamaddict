@@ -21,9 +21,9 @@ const JSON_PATH = path.join(__dirname, "../data/games.json");
   const start = Date.now();
 
   try {
-    // Step 1: Get top 20 management games
-    console.log("Fetching top 20 management games from SteamSpy...\n");
-    const games = await fetchTopGames(["management"], 20);
+    // Step 1: Get top 20 games (forced list includes management/tycoon/4X games)
+    console.log("Fetching top 20 games from strategy, management, tycoon, 4X, colony sim, city builder...\n");
+    const games = await fetchTopGames(["strategy", "management", "tycoon", "4X", "colony sim", "city builder"], 20);
 
     // Step 2: Fetch playtime stats
     console.log(`\nFetching playtime stats for ${games.length} games...\n`);

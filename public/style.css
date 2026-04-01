@@ -56,12 +56,13 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); font
 .stat-sub { font-size: 12px; color: var(--muted2); margin-top: 3px; }
 
 /* ── Layout ── */
-.layout { display: grid; grid-template-columns: 220px 1fr; min-height: calc(100vh - 160px); }
+.layout { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 160px); gap: 0; }
 
 /* ── Sidebar ── */
 .sidebar {
   background: var(--surface); border-right: 1px solid var(--border);
-  padding: 20px 14px; display: flex; flex-direction: column; gap: 24px;
+  padding: 20px 18px; display: flex; flex-direction: column; gap: 28px;
+  max-height: calc(100vh - 160px); overflow-y: auto;
 }
 .sidebar-section { display: flex; flex-direction: column; gap: 3px; }
 .sidebar-label { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.1em; padding: 0 8px 6px; }
@@ -127,8 +128,18 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); font
 .empty-state code { background: var(--surface2); padding: 1px 6px; border-radius: 4px; color: var(--accent2); }
 
 /* ── Table ── */
-#tableWrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+#tableWrap { 
+  overflow-x: auto; 
+  display: flex; 
+  justify-content: center; 
+  padding: 20px;
+}
+#gameTable { 
+  max-width: 1200px; 
+  width: 100%; 
+  border-collapse: collapse; 
+  font-size: 13px;
+}
 thead th {
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
   color: var(--muted); text-align: left; padding: 10px 14px;

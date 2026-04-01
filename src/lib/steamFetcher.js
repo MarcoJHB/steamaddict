@@ -19,19 +19,19 @@ async function sleep(ms) {
 }
 
 // Fetch top strategy and management games from SteamSpy
-async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
+async function fetchTopGames(tags = ["strategy", "management", "tycoon", "4X", "colony sim", "city builder"], limit = 100) {
   const gameMap = new Map();
   
   // Specific games to always include
   const forcedGameIds = [
-    { appId: "294100", name: "RimWorld", genre: "management" },
-    { appId: "784150", name: "Workers & Resources: Soviet Republic", genre: "management" },
-    { appId: "457140", name: "Oxygen Not Included", genre: "management" },
-    { appId: "323090", name: "Anno 1800", genre: "management" },
-    { appId: "255710", name: "Cities: Skylines", genre: "management" },
-    { appId: "248570", name: "Banished", genre: "management" },
-    { appId: "1062090", name: "Timberborn", genre: "management" },
-    { appId: "289070", name: "Sid Meier's Civilization VI", genre: "management" },
+    { appId: "294100", name: "RimWorld", genre: "colony sim" },
+    { appId: "784150", name: "Workers & Resources: Soviet Republic", genre: "city builder" },
+    { appId: "457140", name: "Oxygen Not Included", genre: "colony sim" },
+    { appId: "323090", name: "Anno 1800", genre: "city builder" },
+    { appId: "255710", name: "Cities: Skylines", genre: "city builder" },
+    { appId: "248570", name: "Banished", genre: "city builder" },
+    { appId: "1062090", name: "Timberborn", genre: "city builder" },
+    { appId: "289070", name: "Sid Meier's Civilization VI", genre: "4X" },
   ];
 
   try {
@@ -66,16 +66,14 @@ async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
     console.error("Error fetching from SteamSpy:", e.message);
   }
 
-  // Add forced games to map if not already present
+  // Add forced games to map with extremely high score to guarantee they appear first
   for (const fg of forcedGameIds) {
-    if (!gameMap.has(parseInt(fg.appId))) {
-      gameMap.set(parseInt(fg.appId), {
-        appId: fg.appId,
-        name: fg.name,
-        score: 999999,  // High score to prioritize
-        tags: [fg.genre],
-      });
-    }
+    gameMap.set(parseInt(fg.appId), {
+      appId: fg.appId,
+      name: fg.name,
+      score: 999999999,  // Extremely high score to always prioritize
+      tags: [fg.genre],
+    });
   }
 
   // Convert to array, sort by score, take top N
@@ -83,11 +81,15 @@ async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
     .map(g => {
-      // Assign genre based on tags
+      // Assign primary genre based on tags
       let genre = "strategy";
-      if (g.tags.includes("management")) genre = "management";
-      else if (g.tags.includes("colony sim")) genre = "colony";
-      else if (g.tags.includes("city builder")) genre = "city";
+      if (g.tags.includes("4X")) genre = "4X";
+      else if (g.tags.includes("tycoon")) genre = "tycoon";
+      else if (g.tags.includes("city builder")) genre = "city builder";
+      else if (g.tags.includes("colony sim")) genre = "colony sim";
+      else if (g.tags.includes("management")) genre = "management";
+      else if (g.tags.includes("strategy")) genre = "strategy";
+      
       return {
         appId: g.appId,
         name: g.name,
@@ -203,14 +205,14 @@ async function fetchAllGames(gamesList, { onProgress } = {}) {
 
     // Use Steam reviews rating if available, otherwise use SteamSpy rating
     const finalRating = steamRating.rating || stats.steamspyRating || 0;
-    const reviewCount = steamRating.reviewCount || 0;
+    let sampleSizeStr = stats.sampleSize || "0";
 
     results.push({
       ...game,
       ...meta,
       ...stats,
       rating: finalRating,  // Combined rating: Steam reviews > SteamSpy > 0
-      reviewCount: reviewCount,  // Number of reviews fetched
+      sampleSize: sampleSizeStr,  // Number of players who reviewed on SteamSpy
       fetchedAt: new Date().toISOString(),
     });
 

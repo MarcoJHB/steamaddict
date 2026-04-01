@@ -59,29 +59,23 @@
         <button class="filter-btn active" data-genre="all" onclick="setGenre('all', this)">
           All <span class="badge" id="b-all">0</span>
         </button>
-        <button class="filter-btn" data-genre="survival" onclick="setGenre('survival', this)">
-          Survival <span class="badge" id="b-survival">0</span>
-        </button>
-        <button class="filter-btn" data-genre="automation" onclick="setGenre('automation', this)">
-          Automation <span class="badge" id="b-automation">0</span>
-        </button>
-        <button class="filter-btn" data-genre="colony" onclick="setGenre('colony', this)">
-          Colony sim <span class="badge" id="b-colony">0</span>
-        </button>
-        <button class="filter-btn" data-genre="rpg" onclick="setGenre('rpg', this)">
-          RPG <span class="badge" id="b-rpg">0</span>
-        </button>
         <button class="filter-btn" data-genre="strategy" onclick="setGenre('strategy', this)">
           Strategy <span class="badge" id="b-strategy">0</span>
         </button>
         <button class="filter-btn" data-genre="management" onclick="setGenre('management', this)">
           Management <span class="badge" id="b-management">0</span>
         </button>
-        <button class="filter-btn" data-genre="colony" onclick="setGenre('colony', this)">
-          Colony sim <span class="badge" id="b-colony">0</span>
+        <button class="filter-btn" data-genre="tycoon" onclick="setGenre('tycoon', this)">
+          Tycoon <span class="badge" id="b-tycoon">0</span>
         </button>
-        <button class="filter-btn" data-genre="city" onclick="setGenre('city', this)">
-          City builder <span class="badge" id="b-city">0</span>
+        <button class="filter-btn" data-genre="4X" onclick="setGenre('4X', this)">
+          4X <span class="badge" id="b-4X">0</span>
+        </button>
+        <button class="filter-btn" data-genre="colony sim" onclick="setGenre('colony sim', this)">
+          Colony sim <span class="badge" id="b-colony-sim">0</span>
+        </button>
+        <button class="filter-btn" data-genre="city builder" onclick="setGenre('city builder', this)">
+          City builder <span class="badge" id="b-city-builder">0</span>
         </button>
       </div>
 
@@ -114,13 +108,10 @@
           <thead>
             <tr>
               <th class="col-name">Game</th>
-              <th class="col-genre">Genre</th>
-              <th class="col-num sortable sorted" data-col="avg" onclick="setSort('avg')">Avg playtime ▼</th>
-              <th class="col-num sortable" data-col="atReview" onclick="setSort('atReview')">At review</th>
-              <th class="col-num sortable" data-col="lastTwoWeeks" onclick="setSort('lastTwoWeeks')">Last 2 wks</th>
-              <th class="col-num sortable" data-col="median" onclick="setSort('median')">Median</th>
+              <th class="col-num sortable sorted" data-col="avg" onclick="setSort('avg')">Avg Playtime (All-Time) ▼</th>
+              <th class="col-num sortable" data-col="lastTwoWeeks" onclick="setSort('lastTwoWeeks')">Playtime (This Week)</th>
               <th class="col-num sortable" data-col="rating" onclick="setSort('rating')">Rating</th>
-              <th class="col-num sortable" data-col="reviewCount" onclick="setSort('reviewCount')">Reviews</th>
+              <th class="col-num sortable" data-col="sampleSize" onclick="setSort('sampleSize')"># Reviewed</th>
             </tr>
           </thead>
           <tbody id="tbody"></tbody>
