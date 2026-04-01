@@ -1,0 +1,16 @@
+{
+  "name": "steamdb-playtime",
+  "version": "1.0.0",
+  "description": "Steam playtime tracker dashboard",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'Static site - no build step needed'",
+    "fetch": "node scripts/fetch.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}

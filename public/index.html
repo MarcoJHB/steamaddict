@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SteamPlaytime — Playtime Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- TOP NAV -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">STEAM<span>PLAYTIME</span></div>
+      <div class="tagline">community playtime tracker</div>
+    </div>
+    <div class="topbar-right">
+      <span class="last-updated" id="lastUpdated">—</span>
+      <button class="refresh-btn" id="refreshBtn" onclick="triggerFetch()">
+        <span id="refreshIcon">↻</span> Refresh data
+      </button>
+    </div>
+  </header>
+
+  <!-- STAT CARDS -->
+  <section class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">GAMES TRACKED</div>
+      <div class="stat-val" id="s-count">—</div>
+      <div class="stat-sub">across all genres</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">AVG PLAYTIME</div>
+      <div class="stat-val" id="s-avg">—</div>
+      <div class="stat-sub">hours (mean)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">HIGHEST AVG</div>
+      <div class="stat-val" id="s-high">—</div>
+      <div class="stat-sub" id="s-high-name">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">MOST REVIEWED</div>
+      <div class="stat-val" id="s-reviews">—</div>
+      <div class="stat-sub" id="s-reviews-name">—</div>
+    </div>
+  </section>
+
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">GENRE</div>
+        <button class="filter-btn active" data-genre="all" onclick="setGenre('all', this)">
+          All <span class="badge" id="b-all">0</span>
+        </button>
+        <button class="filter-btn" data-genre="survival" onclick="setGenre('survival', this)">
+          Survival <span class="badge" id="b-survival">0</span>
+        </button>
+        <button class="filter-btn" data-genre="automation" onclick="setGenre('automation', this)">
+          Automation <span class="badge" id="b-automation">0</span>
+        </button>
+        <button class="filter-btn" data-genre="colony" onclick="setGenre('colony', this)">
+          Colony sim <span class="badge" id="b-colony">0</span>
+        </button>
+        <button class="filter-btn" data-genre="rpg" onclick="setGenre('rpg', this)">
+          RPG <span class="badge" id="b-rpg">0</span>
+        </button>
+        <button class="filter-btn" data-genre="strategy" onclick="setGenre('strategy', this)">
+          Strategy <span class="badge" id="b-strategy">0</span>
+        </button>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">SORT BY</div>
+        <button class="filter-btn active-sort" data-sort="avg" onclick="setSort('avg', this)">Avg playtime</button>
+        <button class="filter-btn" data-sort="atReview" onclick="setSort('atReview', this)">At review</button>
+        <button class="filter-btn" data-sort="lastTwoWeeks" onclick="setSort('lastTwoWeeks', this)">Last 2 weeks</button>
+        <button class="filter-btn" data-sort="median" onclick="setSort('median', this)">Median</button>
+        <button class="filter-btn" data-sort="name" onclick="setSort('name', this)">Name</button>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">ADD GAME</div>
+        <input class="sidebar-input" type="text" id="newGameName" placeholder="Game name" />
+        <input class="sidebar-input" type="text" id="newAppId" placeholder="Steam App ID" />
+        <select class="sidebar-input" id="newGenre">
+          <option value="survival">Survival</option>
+          <option value="automation">Automation</option>
+          <option value="colony">Colony sim</option>
+          <option value="rpg">RPG</option>
+          <option value="strategy">Strategy</option>
+        </select>
+        <button class="add-btn" onclick="addGame()">+ Add game</button>
+      </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <div class="toolbar">
+        <input class="search-input" type="text" id="search" placeholder="Search games..." oninput="renderTable()" />
+        <div class="result-count" id="resultCount">— games</div>
+      </div>
+
+      <div id="loadingState" class="loading-state">
+        <div class="spinner"></div>
+        <p>Loading game data...</p>
+      </div>
+
+      <div id="emptyState" class="empty-state" style="display:none">
+        <div class="empty-icon">◎</div>
+        <p>No data yet. Click <strong>Refresh data</strong> to fetch from Steam.</p>
+        <p class="empty-sub">Or run <code>npm run fetch</code> locally and commit <code>data/games.json</code>.</p>
+      </div>
+
+      <div id="tableWrap" style="display:none">
+        <table id="gameTable">
+          <thead>
+            <tr>
+              <th class="col-name">Game</th>
+              <th class="col-genre">Genre</th>
+              <th class="col-num sortable sorted" data-col="avg" onclick="setSort('avg')">Avg playtime ▼</th>
+              <th class="col-num sortable" data-col="atReview" onclick="setSort('atReview')">At review</th>
+              <th class="col-num sortable" data-col="lastTwoWeeks" onclick="setSort('lastTwoWeeks')">Last 2 wks</th>
+              <th class="col-num sortable" data-col="median" onclick="setSort('median')">Median</th>
+              <th class="col-num sortable" data-col="sampleSize" onclick="setSort('sampleSize')">Sample</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
