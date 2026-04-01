@@ -1,5 +1,5 @@
-// steamFetcher.js — uses SteamSpy API for fast playtime data
-// SteamSpy provides playtime stats directly (much faster than Steam reviews API)
+// steamFetcher.js — uses SteamSpy API for playtime + Steam API for reviews/ratings
+// SteamSpy provides playtime stats; Steam API provides reviews and ratings
 // Used by: netlify/functions/fetch-games.js AND scripts/fetch.js
 
 const STEAMSPY_TAG_URL = (tag) =>
@@ -11,6 +11,9 @@ const STEAMSPY_APPDETAILS_URL = (appId) =>
 const STEAM_APP_URL = (appId) =>
   `https://store.steampowered.com/api/appdetails?appids=${appId}&filters=basic,price_overview`;
 
+const STEAM_REVIEWS_URL = (appId, cursor = "*") =>
+  `https://steamcommunity.com/appreviews/${appId}?json=1&num_per_page=100&cursor=${cursor}`;
+
 async function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
@@ -21,9 +24,9 @@ async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
   
   // Specific games to always include
   const forcedGameIds = [
-    { appId: "200920", name: "RimWorld", genre: "management" },
+    { appId: "294100", name: "RimWorld", genre: "management" },
     { appId: "784150", name: "Workers & Resources: Soviet Republic", genre: "management" },
-    { appId: "629630", name: "Oxygen Not Included", genre: "management" },
+    { appId: "457140", name: "Oxygen Not Included", genre: "management" },
     { appId: "323090", name: "Anno 1800", genre: "management" },
     { appId: "255710", name: "Cities: Skylines", genre: "management" },
     { appId: "248570", name: "Banished", genre: "management" },
@@ -110,13 +113,58 @@ async function fetchGameStats(appId) {
         lastTwoWeeks: Math.round((data.median_2weeks || 0) / 60),   // convert minutes -> hours
         highest: Math.round((data.average_forever || 0) / 60) * 1.5, // estimate from historical avg
         sampleSize: data.owners ? data.owners : null,
-        rating: data.userscore || 0,  // Steam rating 0-100
+        steamspyRating: data.userscore || 0,  // SteamSpy rating as fallback (0-100)
       };
     }
   } catch (e) {
     console.error(`  Error fetching stats for ${appId}:`, e.message);
   }
-  return { avg: 0, median: 0, atReview: 0, lastTwoWeeks: 0, highest: 0, sampleSize: 0, rating: 0 };
+  return { avg: 0, median: 0, atReview: 0, lastTwoWeeks: 0, highest: 0, sampleSize: 0, steamspyRating: 0 };
+}
+
+// Fetch game reviews from Steam API and calculate recommendation percentage (up to 1000 reviews)
+async function fetchGameRating(appId) {
+  try {
+    let allReviews = [];
+    let cursor = "*";
+    let pageCount = 0;
+    const maxPages = 10; // 10 pages * 100 reviews = 1000 max
+    
+    console.log(`    Fetching reviews for ${appId}...`);
+    
+    while (cursor && pageCount < maxPages && allReviews.length < 1000) {
+      const res = await fetch(STEAM_REVIEWS_URL(appId, cursor), {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        }
+      });
+      
+      if (!res.ok) {
+        console.log(`    Steam API returned ${res.status}, trying SteamSpy rating instead`);
+        break;
+      }
+      
+      const data = await res.json();
+      
+      if (!data?.reviews || data.reviews.length === 0) break;
+      
+      allReviews = allReviews.concat(data.reviews);
+      cursor = data.cursor;
+      pageCount++;
+      
+      await sleep(100); // be polite to Steam
+    }
+    
+    if (allReviews.length > 0) {
+      const positive = allReviews.filter(r => r.voted_up).length;
+      const rating = Math.round((positive / allReviews.length) * 100);
+      console.log(`    Got ${allReviews.length} reviews, ${rating}% positive`);
+      return { rating, reviewCount: allReviews.length };
+    }
+  } catch (e) {
+    console.log(`    Failed to fetch Steam reviews, will use SteamSpy rating:`, e.message);
+  }
+  return { rating: null, reviewCount: 0 };  // Return null to fallback to SteamSpy rating
 }
 
 // Fetch a single game's metadata from Steam store API
@@ -137,7 +185,7 @@ async function fetchGameMeta(appId) {
   }
 }
 
-// Main: fetch and process all games in the list (uses SteamSpy for fast stats!)
+// Main: fetch and process all games in the list (uses SteamSpy for stats, Steam API for reviews)
 async function fetchAllGames(gamesList, { onProgress } = {}) {
   const results = [];
 
@@ -147,15 +195,22 @@ async function fetchAllGames(gamesList, { onProgress } = {}) {
 
     console.log(`  [${i + 1}/${gamesList.length}] Fetching ${game.name}...`);
 
-    const [stats, meta] = await Promise.all([
+    const [stats, meta, steamRating] = await Promise.all([
       fetchGameStats(game.appId),
       fetchGameMeta(game.appId),
+      fetchGameRating(game.appId),
     ]);
+
+    // Use Steam reviews rating if available, otherwise use SteamSpy rating
+    const finalRating = steamRating.rating || stats.steamspyRating || 0;
+    const reviewCount = steamRating.reviewCount || 0;
 
     results.push({
       ...game,
       ...meta,
       ...stats,
+      rating: finalRating,  // Combined rating: Steam reviews > SteamSpy > 0
+      reviewCount: reviewCount,  // Number of reviews fetched
       fetchedAt: new Date().toISOString(),
     });
 

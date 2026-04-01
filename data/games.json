@@ -1,36 +1,6 @@
 {
   "games": [
     {
-      "appId": "200920",
-      "name": "RimWorld",
-      "genre": "management",
-      "avg": 0,
-      "median": 0,
-      "atReview": 0,
-      "lastTwoWeeks": 0,
-      "highest": 0,
-      "sampleSize": "0 .. 20,000",
-      "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:51.102Z"
-    },
-    {
-      "appId": "629630",
-      "name": "Oxygen Not Included",
-      "genre": "management",
-      "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629630/header.jpg?t=1493215905",
-      "releaseDate": null,
-      "price": "2,99€",
-      "totalReviews": null,
-      "avg": 0,
-      "median": 0,
-      "atReview": 0,
-      "lastTwoWeeks": 0,
-      "highest": 0,
-      "sampleSize": "0 .. 20,000",
-      "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:51.389Z"
-    },
-    {
       "appId": "323090",
       "name": "Anno 1800",
       "genre": "management",
@@ -40,8 +10,10 @@
       "lastTwoWeeks": 0,
       "highest": 0,
       "sampleSize": "0 .. 20,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:51.687Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:49.153Z"
     },
     {
       "appId": "248570",
@@ -57,8 +29,10 @@
       "lastTwoWeeks": 0,
       "highest": 12,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:52.121Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:49.684Z"
     },
     {
       "appId": "227300",
@@ -74,8 +48,10 @@
       "lastTwoWeeks": 3,
       "highest": 186,
       "sampleSize": "10,000,000 .. 20,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:52.504Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:50.181Z"
     },
     {
       "appId": "289070",
@@ -91,8 +67,10 @@
       "lastTwoWeeks": 5,
       "highest": 148.5,
       "sampleSize": "10,000,000 .. 20,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:52.812Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:50.683Z"
     },
     {
       "appId": "255710",
@@ -100,7 +78,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/d0d3c785f751d4e5e681c8f6697ef56eb90bd920/header_alt_assets_8.jpg?t=1774972989",
       "releaseDate": null,
-      "price": "27,99€",
+      "price": "$29.99",
       "totalReviews": null,
       "avg": 56,
       "median": 14,
@@ -108,8 +86,10 @@
       "lastTwoWeeks": 3,
       "highest": 84,
       "sampleSize": "10,000,000 .. 20,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:53.396Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:51.161Z"
     },
     {
       "appId": "1468810",
@@ -117,7 +97,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1468810/header.jpg?t=1769479020",
       "releaseDate": null,
-      "price": "16,79€",
+      "price": "$19.99",
       "totalReviews": null,
       "avg": 75,
       "median": 41,
@@ -125,8 +105,10 @@
       "lastTwoWeeks": 22,
       "highest": 112.5,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:53.685Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:51.662Z"
     },
     {
       "appId": "427520",
@@ -134,7 +116,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg?t=1763986204",
       "releaseDate": null,
-      "price": "$35.00",
+      "price": "32,--€",
       "totalReviews": null,
       "avg": 198,
       "median": 55,
@@ -142,8 +124,10 @@
       "lastTwoWeeks": 9,
       "highest": 297,
       "sampleSize": "5,000,000 .. 10,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:53.975Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:52.145Z"
     },
     {
       "appId": "294100",
@@ -151,7 +135,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/header.jpg?t=1774369681",
       "releaseDate": null,
-      "price": "$34.99",
+      "price": "31,99€",
       "totalReviews": null,
       "avg": 275,
       "median": 76,
@@ -159,8 +143,10 @@
       "lastTwoWeeks": 9,
       "highest": 412.5,
       "sampleSize": "5,000,000 .. 10,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:54.249Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:52.621Z"
     },
     {
       "appId": "3164500",
@@ -168,7 +154,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1773974661",
       "releaseDate": null,
-      "price": "19,50€",
+      "price": "$19.99",
       "totalReviews": null,
       "avg": 30,
       "median": 20,
@@ -176,8 +162,10 @@
       "lastTwoWeeks": 3,
       "highest": 45,
       "sampleSize": "10,000,000 .. 20,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:54.535Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:53.103Z"
     },
     {
       "appId": "281990",
@@ -185,7 +173,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/header.jpg?t=1774472425",
       "releaseDate": null,
-      "price": "39,99€",
+      "price": "$39.99",
       "totalReviews": null,
       "avg": 151,
       "median": 23,
@@ -193,8 +181,10 @@
       "lastTwoWeeks": 7,
       "highest": 226.5,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:54.858Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:53.624Z"
     },
     {
       "appId": "270880",
@@ -210,8 +200,10 @@
       "lastTwoWeeks": 2,
       "highest": 124.5,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:55.143Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:54.095Z"
     },
     {
       "appId": "1811260",
@@ -227,8 +219,10 @@
       "lastTwoWeeks": 22,
       "highest": 288,
       "sampleSize": "5,000,000 .. 10,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:55.428Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:54.571Z"
     },
     {
       "appId": "433340",
@@ -244,8 +238,10 @@
       "lastTwoWeeks": 2,
       "highest": 30,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:55.731Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:55.049Z"
     },
     {
       "appId": "236850",
@@ -261,8 +257,10 @@
       "lastTwoWeeks": 13,
       "highest": 547.5,
       "sampleSize": "5,000,000 .. 10,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:56.035Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:55.534Z"
     },
     {
       "appId": "1868140",
@@ -278,8 +276,10 @@
       "lastTwoWeeks": 2,
       "highest": 37.5,
       "sampleSize": "5,000,000 .. 10,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:56.389Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:56.009Z"
     },
     {
       "appId": "457140",
@@ -287,7 +287,7 @@
       "genre": "management",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1772559127",
       "releaseDate": null,
-      "price": "$24.99",
+      "price": "22,99€",
       "totalReviews": null,
       "avg": 104,
       "median": 15,
@@ -295,8 +295,10 @@
       "lastTwoWeeks": 9,
       "highest": 156,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:56.685Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:56.490Z"
     },
     {
       "appId": "1158310",
@@ -312,8 +314,10 @@
       "lastTwoWeeks": 5,
       "highest": 211.5,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:56.962Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:56.995Z"
     },
     {
       "appId": "323190",
@@ -329,9 +333,49 @@
       "lastTwoWeeks": 3,
       "highest": 33,
       "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-01T14:20:57.238Z"
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:57.474Z"
+    },
+    {
+      "appId": "282070",
+      "name": "This War of Mine",
+      "genre": "management",
+      "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282070/26fb8c9bb7b9e3a17469d8026ee3fa510ee7f8f5/header.jpg?t=1765218571",
+      "releaseDate": null,
+      "price": "$19.99",
+      "totalReviews": null,
+      "avg": 16,
+      "median": 5,
+      "atReview": 7,
+      "lastTwoWeeks": 10,
+      "highest": 24,
+      "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
+      "rating": 0,
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:57.930Z"
+    },
+    {
+      "appId": "233860",
+      "name": "Kenshi",
+      "genre": "management",
+      "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233860/fa72ac8a032fd876780cd5b554e4c03b4976ef74/header.jpg?t=1765221522",
+      "releaseDate": null,
+      "price": "$29.99",
+      "totalReviews": null,
+      "avg": 88,
+      "median": 15,
+      "atReview": 12,
+      "lastTwoWeeks": 16,
+      "highest": 132,
+      "sampleSize": "2,000,000 .. 5,000,000",
+      "steamspyRating": 0,
+      "rating": 0,
+      "reviewCount": 0,
+      "fetchedAt": "2026-04-01T14:32:58.407Z"
     }
   ],
-  "lastUpdated": "2026-04-01T14:20:57.343Z"
+  "lastUpdated": "2026-04-01T14:32:58.512Z"
 }
