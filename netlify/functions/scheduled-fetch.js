@@ -3,16 +3,16 @@
 // Requires Netlify Pro or higher for scheduled functions
 
 const { schedule } = require("@netlify/functions");
-const { fetchAllGames } = require("../../src/lib/steamFetcher");
-const { GAMES }         = require("../../src/lib/games");
+const { fetchAllGames, fetchTopGames } = require("../../src/lib/steamFetcher");
 const db                = require("../../src/lib/db");
 
 const handler = async () => {
   try {
     console.log("[Scheduled] Starting daily Steam fetch...");
-    const games = await fetchAllGames(GAMES);
-    db.save(games);
-    console.log(`[Scheduled] Done. Fetched ${games.length} games.`);
+    const games = await fetchTopGames(["strategy", "management"], 100);
+    const enrichedGames = await fetchAllGames(games);
+    await db.save(enrichedGames);
+    console.log(`[Scheduled] Done. Fetched ${enrichedGames.length} games.`);
     return { statusCode: 200 };
   } catch (e) {
     console.error("[Scheduled] Error:", e.message);

@@ -6,8 +6,7 @@ let activeGenre = "all";
 let sortKey     = "avg";
 let sortDir     = -1; // -1 = descending
 
-// Extra games added via the UI (stored in localStorage)
-let customGames = JSON.parse(localStorage.getItem("customGames") || "[]");
+
 
 // ── Boot ───────────────────────────────────────────────
 window.addEventListener("DOMContentLoaded", () => {
@@ -59,23 +58,6 @@ async function triggerFetch() {
     btn.disabled = false;
     btn.classList.remove("loading");
   }
-}
-
-// ── Add game ───────────────────────────────────────────
-function addGame() {
-  const name  = document.getElementById("newGameName").value.trim();
-  const appId = document.getElementById("newAppId").value.trim();
-  const genre = document.getElementById("newGenre").value;
-
-  if (!name || !appId) { toast("Enter a game name and App ID", "err"); return; }
-  if (!/^\d+$/.test(appId)) { toast("App ID must be a number", "err"); return; }
-
-  customGames.push({ name, appId, genre });
-  localStorage.setItem("customGames", JSON.stringify(customGames));
-
-  document.getElementById("newGameName").value = "";
-  document.getElementById("newAppId").value = "";
-  toast(`Added ${name} — click Refresh data to fetch stats`, "ok");
 }
 
 // ── Filters ────────────────────────────────────────────
