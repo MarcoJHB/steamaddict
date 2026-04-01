@@ -8,8 +8,9 @@
     "fetch": "node scripts/fetch.js"
   },
   "dependencies": {
-    "node-fetch": "^3.3.2"
-  },
+  "node-fetch": "^3.3.2",
+  "@netlify/functions": "^2.8.1"
+},
   "devDependencies": {
     "netlify-cli": "^17.0.0"
   }
