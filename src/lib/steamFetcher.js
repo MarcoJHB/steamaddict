@@ -18,6 +18,18 @@ async function sleep(ms) {
 // Fetch top strategy and management games from SteamSpy
 async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
   const gameMap = new Map();
+  
+  // Specific games to always include
+  const forcedGameIds = [
+    { appId: "200920", name: "RimWorld", genre: "management" },
+    { appId: "784150", name: "Workers & Resources: Soviet Republic", genre: "management" },
+    { appId: "629630", name: "Oxygen Not Included", genre: "management" },
+    { appId: "323090", name: "Anno 1800", genre: "management" },
+    { appId: "255710", name: "Cities: Skylines", genre: "management" },
+    { appId: "248570", name: "Banished", genre: "management" },
+    { appId: "1062090", name: "Timberborn", genre: "management" },
+    { appId: "289070", name: "Sid Meier's Civilization VI", genre: "management" },
+  ];
 
   try {
     for (const tag of tags) {
@@ -51,6 +63,18 @@ async function fetchTopGames(tags = ["strategy", "management"], limit = 100) {
     console.error("Error fetching from SteamSpy:", e.message);
   }
 
+  // Add forced games to map if not already present
+  for (const fg of forcedGameIds) {
+    if (!gameMap.has(parseInt(fg.appId))) {
+      gameMap.set(parseInt(fg.appId), {
+        appId: fg.appId,
+        name: fg.name,
+        score: 999999,  // High score to prioritize
+        tags: [fg.genre],
+      });
+    }
+  }
+
   // Convert to array, sort by score, take top N
   const sorted = Array.from(gameMap.values())
     .sort((a, b) => b.score - a.score)
@@ -80,18 +104,19 @@ async function fetchGameStats(appId) {
     
     if (data && data.appid) {
       return {
-        avg: Math.round(data.average_forever || 0),
-        median: Math.round(data.median_forever || 0),
-        atReview: Math.round(data.average_2weeks || 0),
-        lastTwoWeeks: Math.round(data.median_2weeks || 0),
-        highest: Math.round(data.ccu || 0),
+        avg: Math.round((data.average_forever || 0) / 60),          // convert minutes -> hours
+        median: Math.round((data.median_forever || 0) / 60),        // convert minutes -> hours
+        atReview: Math.round((data.average_2weeks || 0) / 60),      // convert minutes -> hours
+        lastTwoWeeks: Math.round((data.median_2weeks || 0) / 60),   // convert minutes -> hours
+        highest: Math.round((data.average_forever || 0) / 60) * 1.5, // estimate from historical avg
         sampleSize: data.owners ? data.owners : null,
+        rating: data.userscore || 0,  // Steam rating 0-100
       };
     }
   } catch (e) {
     console.error(`  Error fetching stats for ${appId}:`, e.message);
   }
-  return { avg: 0, median: 0, atReview: 0, lastTwoWeeks: 0, highest: 0, sampleSize: 0 };
+  return { avg: 0, median: 0, atReview: 0, lastTwoWeeks: 0, highest: 0, sampleSize: 0, rating: 0 };
 }
 
 // Fetch a single game's metadata from Steam store API

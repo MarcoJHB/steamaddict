@@ -127,6 +127,7 @@ function renderTable() {
         <td class="col-num num-cell ${numClass(g.atReview)}">${fmt(g.atReview)}h</td>
         <td class="col-num num-cell ${numClass(g.lastTwoWeeks)}">${fmt(g.lastTwoWeeks)}h</td>
         <td class="col-num num-cell ${numClass(g.median)}">${fmt(g.median)}h</td>
+        <td class="col-num num-cell ${numClass(g.rating)}">${g.rating}%</td>
         <td class="col-num num-cell num-low">${fmtK(g.sampleSize)}</td>
       </tr>
     `;
