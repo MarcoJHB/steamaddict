@@ -138,14 +138,11 @@ function updateStats() {
 
   const avgAll  = Math.round(allGames.reduce((a, b) => a + (b.avg || 0), 0) / n);
   const highest = allGames.reduce((a, b) => (b.avg || 0) > (a.avg || 0) ? b : a);
-  const topRev  = allGames.reduce((a, b) => (b.sampleSize || 0) > (a.sampleSize || 0) ? b : a);
 
   setText("s-count",        n);
   setText("s-avg",          avgAll + "h");
   setText("s-high",         (highest.avg || 0) + "h");
   setText("s-high-name",    highest.name || "—");
-  setText("s-reviews",      fmtK(topRev.sampleSize || 0));
-  setText("s-reviews-name", topRev.name || "—");
 }
 
 function updateBadges() {
