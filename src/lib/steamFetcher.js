@@ -22,7 +22,7 @@ async function sleep(ms) {
 async function fetchTopGames(tags = ["strategy", "management", "tycoon", "4X", "colony sim", "city builder"], limit = 100) {
   const gameMap = new Map();
   
-  // Specific games to always include
+  // Specific games to always include (ONLY these 8 games)
   const forcedGameIds = [
     { appId: "294100", name: "RimWorld", genre: "colony sim" },
     { appId: "784150", name: "Workers & Resources: Soviet Republic", genre: "city builder" },

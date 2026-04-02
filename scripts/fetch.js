@@ -21,9 +21,9 @@ const JSON_PATH = path.join(__dirname, "../data/games.json");
   const start = Date.now();
 
   try {
-    // Step 1: Get top 20 games (forced list includes management/tycoon/4X games)
-    console.log("Fetching top 20 games from strategy, management, tycoon, 4X, colony sim, city builder...\n");
-    const games = await fetchTopGames(["strategy", "management", "tycoon", "4X", "colony sim", "city builder"], 20);
+    // Step 1: Get only the 8 specified games
+    console.log("Fetching 8 specific games...");
+    const games = await fetchTopGames(["strategy", "management", "tycoon", "4X", "colony sim", "city builder"], 8);
 
     // Step 2: Fetch playtime stats
     console.log(`\nFetching playtime stats for ${games.length} games...\n`);
@@ -45,8 +45,8 @@ const JSON_PATH = path.join(__dirname, "../data/games.json");
 
     const elapsed = ((Date.now() - start) / 1000).toFixed(1);
     console.log(`Done in ${elapsed}s`);
-    console.log(`✓ Saved ${enrichedGames.length} management games to data/games.csv`);
-    console.log(`✓ Saved ${enrichedGames.length} management games to data/games.json`);
+    console.log(`✓ Saved ${enrichedGames.length} games to data/games.csv`);
+    console.log(`✓ Saved ${enrichedGames.length} games to data/games.json`);
     console.log(`\nTop 5 by avg playtime:`);
 
     enrichedGames
