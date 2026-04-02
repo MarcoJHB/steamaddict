@@ -124,49 +124,73 @@ async function fetchGameStats(appId) {
   return { avg: 0, median: 0, atReview: 0, lastTwoWeeks: 0, highest: 0, sampleSize: 0, steamspyRating: 0 };
 }
 
-// Fetch game reviews from Steam API and calculate recommendation percentage (up to 1000 reviews)
-async function fetchGameRating(appId) {
+// Fetch up to 1000 reviews from Steam and calculate playtime statistics
+async function fetchGameReviews(appId) {
   try {
-    let allReviews = [];
+    const baseUrl = `https://store.steampowered.com/appreviews/${appId}?json=1&filter=recent&num_per_page=100&language=all`;
     let cursor = "*";
-    let pageCount = 0;
-    const maxPages = 10; // 10 pages * 100 reviews = 1000 max
-    
+    let totalFetched = 0;
+    const targetCount = 1000;
+    const allReviews = [];
+
     console.log(`    Fetching reviews for ${appId}...`);
-    
-    while (cursor && pageCount < maxPages && allReviews.length < 1000) {
-      const res = await fetch(STEAM_REVIEWS_URL(appId, cursor), {
+
+    while (totalFetched < targetCount) {
+      const url = `${baseUrl}&cursor=${encodeURIComponent(cursor)}`;
+
+      const res = await fetch(url, {
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
         }
       });
-      
+
       if (!res.ok) {
-        console.log(`    Steam API returned ${res.status}, trying SteamSpy rating instead`);
+        console.log(`    Steam API returned ${res.status}`);
         break;
       }
-      
+
       const data = await res.json();
-      
-      if (!data?.reviews || data.reviews.length === 0) break;
-      
-      allReviews = allReviews.concat(data.reviews);
+
+      if (data.success !== 1 || !data.reviews || data.reviews.length === 0) {
+        console.log(`    No more reviews available`);
+        break;
+      }
+
+      allReviews.push(...data.reviews);
+      totalFetched += data.reviews.length;
       cursor = data.cursor;
-      pageCount++;
-      
+
       await sleep(100); // be polite to Steam
     }
-    
+
     if (allReviews.length > 0) {
-      const positive = allReviews.filter(r => r.voted_up).length;
-      const rating = Math.round((positive / allReviews.length) * 100);
-      console.log(`    Got ${allReviews.length} reviews, ${rating}% positive`);
-      return { rating, reviewCount: allReviews.length };
+      // Calculate statistics from reviews
+      const playtimes = allReviews.map(r => ({
+        forever: Math.round((r.author?.playtime_forever ?? 0) / 60),
+        atReview: Math.round((r.author?.playtime_at_review ?? 0) / 60),
+        lastTwoWeeks: Math.round((r.author?.playtime_last_two_weeks ?? 0) / 60),
+      }));
+
+      // Calculate averages and highest
+      const avgForever = Math.round(playtimes.reduce((sum, p) => sum + p.forever, 0) / playtimes.length);
+      const avgAtReview = Math.round(playtimes.reduce((sum, p) => sum + p.atReview, 0) / playtimes.length);
+      const avgLastTwoWeeks = Math.round(playtimes.reduce((sum, p) => sum + p.lastTwoWeeks, 0) / playtimes.length);
+      const highestForever = Math.max(...playtimes.map(p => p.forever));
+
+      console.log(`    Got ${allReviews.length} reviews, avg: ${avgForever}h all-time, ${highestForever}h highest`);
+
+      return {
+        avg: avgForever,
+        atReview: avgAtReview,
+        lastTwoWeeks: avgLastTwoWeeks,
+        highest: highestForever,
+        reviewCount: allReviews.length,
+      };
     }
   } catch (e) {
-    console.log(`    Failed to fetch Steam reviews, will use SteamSpy rating:`, e.message);
+    console.log(`    Failed to fetch Steam reviews:`, e.message);
   }
-  return { rating: null, reviewCount: 0 };  // Return null to fallback to SteamSpy rating
+  return { avg: 0, atReview: 0, lastTwoWeeks: 0, highest: 0, reviewCount: 0 };
 }
 
 // Fetch a single game's metadata from Steam store API
@@ -187,7 +211,7 @@ async function fetchGameMeta(appId) {
   }
 }
 
-// Main: fetch and process all games in the list (uses SteamSpy for stats, Steam API for reviews)
+// Main: fetch and process all games in the list (uses Steam reviews API for actual playtime stats)
 async function fetchAllGames(gamesList, { onProgress } = {}) {
   const results = [];
 
@@ -197,26 +221,24 @@ async function fetchAllGames(gamesList, { onProgress } = {}) {
 
     console.log(`  [${i + 1}/${gamesList.length}] Fetching ${game.name}...`);
 
-    const [stats, meta, steamRating] = await Promise.all([
-      fetchGameStats(game.appId),
+    const [reviewStats, meta] = await Promise.all([
+      fetchGameReviews(game.appId),
       fetchGameMeta(game.appId),
-      fetchGameRating(game.appId),
     ]);
-
-    // Use Steam reviews rating if available, otherwise use SteamSpy rating
-    const finalRating = steamRating.rating || stats.steamspyRating || 0;
-    let sampleSizeStr = stats.sampleSize || "0";
 
     results.push({
       ...game,
       ...meta,
-      ...stats,
-      rating: finalRating,  // Combined rating: Steam reviews > SteamSpy > 0
-      sampleSize: sampleSizeStr,  // Number of players who reviewed on SteamSpy
+      avg: reviewStats.avg,
+      atReview: reviewStats.atReview,
+      lastTwoWeeks: reviewStats.lastTwoWeeks,
+      highest: reviewStats.highest,
+      sampleSize: reviewStats.reviewCount,
+      rating: 0,  // Rating data not included in reviews API response
       fetchedAt: new Date().toISOString(),
     });
 
-    await sleep(100); // be polite to SteamSpy/Steam
+    await sleep(200); // be polite to Steam
   }
 
   return results;

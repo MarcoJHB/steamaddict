@@ -8,15 +8,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 212.711,
-      "median": 1,
-      "atReview": 1,
-      "lastTwoWeeks": 1,
-      "highest": 15650,
-      "sampleSize": "2,000,000 .. 5,000,000",
-      "steamspyRating": 0,
+      "avg": 88,
+      "atReview": 34,
+      "lastTwoWeeks": 0,
+      "highest": 2991,
+      "sampleSize": 146,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:15.411Z"
+      "fetchedAt": "2026-04-02T07:23:27.113Z"
     },
     {
       "appId": "255710",
@@ -26,15 +24,13 @@
       "releaseDate": null,
       "price": "27,99€",
       "totalReviews": null,
-      "avg": 111.708,
-      "median": 13,
-      "atReview": 6,
-      "lastTwoWeeks": 2,
-      "highest": 4843,
-      "sampleSize": "10,000,000 .. 20,000,000",
-      "steamspyRating": 0,
+      "avg": 109,
+      "atReview": 100,
+      "lastTwoWeeks": 13,
+      "highest": 4846,
+      "sampleSize": 1099,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:15.971Z"
+      "fetchedAt": "2026-04-02T07:23:33.053Z"
     },
     {
       "appId": "289070",
@@ -44,15 +40,13 @@
       "releaseDate": null,
       "price": "59,99€",
       "totalReviews": null,
-      "avg": 254.689,
-      "median": 25,
-      "atReview": 8,
-      "lastTwoWeeks": 5,
+      "avg": 262,
+      "atReview": 247,
+      "lastTwoWeeks": 16,
       "highest": 20380,
-      "sampleSize": "10,000,000 .. 20,000,000",
-      "steamspyRating": 0,
+      "sampleSize": 1099,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:16.502Z"
+      "fetchedAt": "2026-04-02T07:23:38.796Z"
     },
     {
       "appId": "294100",
@@ -62,15 +56,13 @@
       "releaseDate": null,
       "price": "31,99€",
       "totalReviews": null,
-      "avg": 478.758,
-      "median": 73,
-      "atReview": 28,
-      "lastTwoWeeks": 10,
-      "highest": 13564,
-      "sampleSize": "5,000,000 .. 10,000,000",
-      "steamspyRating": 0,
+      "avg": 483,
+      "atReview": 463,
+      "lastTwoWeeks": 33,
+      "highest": 13570,
+      "sampleSize": 1000,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:17.169Z"
+      "fetchedAt": "2026-04-02T07:23:44.719Z"
     },
     {
       "appId": "457140",
@@ -80,15 +72,13 @@
       "releaseDate": null,
       "price": "22,99€",
       "totalReviews": null,
-      "avg": 320.019,
-      "median": 15,
-      "atReview": 15,
-      "lastTwoWeeks": 11,
+      "avg": 324,
+      "atReview": 302,
+      "lastTwoWeeks": 18,
       "highest": 10299,
-      "sampleSize": "2,000,000 .. 5,000,000",
-      "steamspyRating": 0,
+      "sampleSize": 1000,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:17.731Z"
+      "fetchedAt": "2026-04-02T07:23:50.308Z"
     },
     {
       "appId": "784150",
@@ -98,15 +88,13 @@
       "releaseDate": null,
       "price": "39,99€",
       "totalReviews": null,
-      "avg": 176.981,
-      "median": 10,
-      "atReview": 4,
-      "lastTwoWeeks": 7,
-      "highest": 4430,
-      "sampleSize": "500,000 .. 1,000,000",
-      "steamspyRating": 0,
+      "avg": 184,
+      "atReview": 147,
+      "lastTwoWeeks": 11,
+      "highest": 6433,
+      "sampleSize": 1099,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:18.276Z"
+      "fetchedAt": "2026-04-02T07:23:56.045Z"
     },
     {
       "appId": "1062090",
@@ -116,32 +104,26 @@
       "releaseDate": null,
       "price": "33,99€",
       "totalReviews": null,
-      "avg": 115.917,
-      "median": 17,
-      "atReview": 14,
-      "lastTwoWeeks": 8,
+      "avg": 116,
+      "atReview": 101,
+      "lastTwoWeeks": 29,
       "highest": 2069,
-      "sampleSize": "1,000,000 .. 2,000,000",
-      "steamspyRating": 0,
+      "sampleSize": 1000,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:18.825Z"
+      "fetchedAt": "2026-04-02T07:24:00.441Z"
     },
     {
       "appId": "323090",
       "name": "Anno 1800",
       "genre": "city builder",
-      "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323090/header.jpg?t=1769479020",
-      "price": "€19.99",
-      "avg": 128.323,
-      "median": 0,
+      "avg": 0,
       "atReview": 0,
       "lastTwoWeeks": 0,
-      "highest": 4607,
-      "sampleSize": "2,000,000 .. 5,000,000",
-      "steamspyRating": 0,
+      "highest": 0,
+      "sampleSize": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:02:19.376Z"
+      "fetchedAt": "2026-04-02T07:24:00.888Z"
     }
   ],
-  "lastUpdated": "2026-04-02T07:02:19.486Z"
+  "lastUpdated": "2026-04-02T07:24:01.093Z"
 }
