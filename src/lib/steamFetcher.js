@@ -164,18 +164,17 @@ async function fetchGameReviews(appId) {
     }
 
     if (allReviews.length > 0) {
-      // Calculate statistics from reviews
-      const playtimes = allReviews.map(r => ({
-        forever: Math.round((r.author?.playtime_forever ?? 0) / 60),
-        atReview: Math.round((r.author?.playtime_at_review ?? 0) / 60),
-        lastTwoWeeks: Math.round((r.author?.playtime_last_two_weeks ?? 0) / 60),
-      }));
+      // Calculate statistics from reviews (work with minutes first, then convert to hours)
+      const totalForever = allReviews.reduce((sum, r) => sum + (r.author?.playtime_forever ?? 0), 0);
+      const totalAtReview = allReviews.reduce((sum, r) => sum + (r.author?.playtime_at_review ?? 0), 0);
+      const totalLastTwoWeeks = allReviews.reduce((sum, r) => sum + (r.author?.playtime_last_two_weeks ?? 0), 0);
+      const maxForever = Math.max(...allReviews.map(r => r.author?.playtime_forever ?? 0));
 
-      // Calculate averages and highest
-      const avgForever = Math.round(playtimes.reduce((sum, p) => sum + p.forever, 0) / playtimes.length);
-      const avgAtReview = Math.round(playtimes.reduce((sum, p) => sum + p.atReview, 0) / playtimes.length);
-      const avgLastTwoWeeks = Math.round(playtimes.reduce((sum, p) => sum + p.lastTwoWeeks, 0) / playtimes.length);
-      const highestForever = Math.max(...playtimes.map(p => p.forever));
+      // Average from total minutes, then convert to hours and round
+      const avgForever = Math.round(totalForever / allReviews.length / 60);
+      const avgAtReview = Math.round(totalAtReview / allReviews.length / 60);
+      const avgLastTwoWeeks = Math.round(totalLastTwoWeeks / allReviews.length / 60);
+      const highestForever = Math.round(maxForever / 60);
 
       console.log(`    Got ${allReviews.length} reviews, avg: ${avgForever}h all-time, ${highestForever}h highest`);
 
