@@ -127,40 +127,46 @@ async function fetchGameStats(appId) {
 // Fetch up to 1000 reviews from Steam and calculate playtime statistics
 async function fetchGameReviews(appId) {
   try {
-    const baseUrl = `https://store.steampowered.com/appreviews/${appId}?json=1&filter=recent&num_per_page=100&language=all`;
-    let cursor = "*";
-    let totalFetched = 0;
-    const targetCount = 1000;
-    const allReviews = [];
+    // Try multiple filters to get as many reviews as possible
+    const filters = ['recent', 'updated', 'all'];
+    let allReviews = [];
 
-    console.log(`    Fetching reviews for ${appId}...`);
+    for (const filter of filters) {
+      if (allReviews.length >= 1000) break; // stop if we have enough
+      
+      const targetCount = 1000 - allReviews.length;
+      const baseUrl = `https://store.steampowered.com/appreviews/${appId}?json=1&filter=${filter}&num_per_page=100&language=all`;
+      let cursor = "*";
+      let totalFetched = 0;
 
-    while (totalFetched < targetCount) {
-      const url = `${baseUrl}&cursor=${encodeURIComponent(cursor)}`;
+      console.log(`    Fetching ${filter} reviews for ${appId}...`);
 
-      const res = await fetch(url, {
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+      while (totalFetched < targetCount && allReviews.length < 1000) {
+        const url = `${baseUrl}&cursor=${encodeURIComponent(cursor)}`;
+
+        const res = await fetch(url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          }
+        });
+
+        if (!res.ok) {
+          console.log(`    Steam API returned ${res.status}`);
+          break;
         }
-      });
 
-      if (!res.ok) {
-        console.log(`    Steam API returned ${res.status}`);
-        break;
+        const data = await res.json();
+
+        if (data.success !== 1 || !data.reviews || data.reviews.length === 0) {
+          break;
+        }
+
+        allReviews.push(...data.reviews);
+        totalFetched += data.reviews.length;
+        cursor = data.cursor;
+
+        await sleep(100); // be polite to Steam
       }
-
-      const data = await res.json();
-
-      if (data.success !== 1 || !data.reviews || data.reviews.length === 0) {
-        console.log(`    No more reviews available`);
-        break;
-      }
-
-      allReviews.push(...data.reviews);
-      totalFetched += data.reviews.length;
-      cursor = data.cursor;
-
-      await sleep(100); // be polite to Steam
     }
 
     if (allReviews.length > 0) {

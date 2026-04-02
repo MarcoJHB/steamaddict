@@ -8,13 +8,13 @@
       "releaseDate": null,
       "price": "Free",
       "totalReviews": null,
-      "avg": 88,
-      "atReview": 34,
+      "avg": 100,
+      "atReview": 37,
       "lastTwoWeeks": 0,
       "highest": 2991,
-      "sampleSize": 146,
+      "sampleSize": 1092,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:13.042Z"
+      "fetchedAt": "2026-04-02T07:33:49.625Z"
     },
     {
       "appId": "255710",
@@ -22,7 +22,7 @@
       "genre": "city builder",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/d0d3c785f751d4e5e681c8f6697ef56eb90bd920/header_alt_assets_8.jpg?t=1774972989",
       "releaseDate": null,
-      "price": "27,99€",
+      "price": "$29.99",
       "totalReviews": null,
       "avg": 108,
       "atReview": 99,
@@ -30,7 +30,7 @@
       "highest": 4846,
       "sampleSize": 1099,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:18.714Z"
+      "fetchedAt": "2026-04-02T07:33:54.180Z"
     },
     {
       "appId": "289070",
@@ -38,7 +38,7 @@
       "genre": "4X",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1740607040",
       "releaseDate": null,
-      "price": "59,99€",
+      "price": "$59.99",
       "totalReviews": null,
       "avg": 258,
       "atReview": 246,
@@ -46,7 +46,7 @@
       "highest": 20380,
       "sampleSize": 1000,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:23.960Z"
+      "fetchedAt": "2026-04-02T07:33:58.473Z"
     },
     {
       "appId": "294100",
@@ -56,13 +56,13 @@
       "releaseDate": null,
       "price": "31,99€",
       "totalReviews": null,
-      "avg": 483,
-      "atReview": 463,
-      "lastTwoWeeks": 33,
-      "highest": 13570,
+      "avg": 484,
+      "atReview": 467,
+      "lastTwoWeeks": 32,
+      "highest": 13571,
       "sampleSize": 1000,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:28.457Z"
+      "fetchedAt": "2026-04-02T07:34:03.569Z"
     },
     {
       "appId": "457140",
@@ -78,7 +78,7 @@
       "highest": 10299,
       "sampleSize": 1000,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:32.752Z"
+      "fetchedAt": "2026-04-02T07:34:08.329Z"
     },
     {
       "appId": "784150",
@@ -88,13 +88,13 @@
       "releaseDate": null,
       "price": "39,99€",
       "totalReviews": null,
-      "avg": 182,
+      "avg": 184,
       "atReview": 148,
-      "lastTwoWeeks": 13,
+      "lastTwoWeeks": 11,
       "highest": 6433,
       "sampleSize": 1099,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:38.319Z"
+      "fetchedAt": "2026-04-02T07:34:13.441Z"
     },
     {
       "appId": "1062090",
@@ -102,7 +102,7 @@
       "genre": "city builder",
       "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1062090/72111d1d212c4fea7539304e47d87e1dcdc4b183/header_alt_assets_15.jpg?t=1774259349",
       "releaseDate": null,
-      "price": "$34.99",
+      "price": "33,99€",
       "totalReviews": null,
       "avg": 116,
       "atReview": 101,
@@ -110,7 +110,7 @@
       "highest": 2074,
       "sampleSize": 1000,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:43.489Z"
+      "fetchedAt": "2026-04-02T07:34:17.612Z"
     },
     {
       "appId": "323090",
@@ -122,8 +122,8 @@
       "highest": 0,
       "sampleSize": 0,
       "rating": 0,
-      "fetchedAt": "2026-04-02T07:29:43.934Z"
+      "fetchedAt": "2026-04-02T07:34:18.508Z"
     }
   ],
-  "lastUpdated": "2026-04-02T07:29:44.147Z"
+  "lastUpdated": "2026-04-02T07:34:18.722Z"
 }
